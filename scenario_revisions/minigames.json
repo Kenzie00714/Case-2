@@ -1,0 +1,315 @@
+{
+ "rules": [
+  [
+   "Noise meter",
+   "Every fumble, dropped tool, wrong step or spark adds noise. When the meter fills, the infected arrive and the game ends early (counts as a fail).",
+   "How fast infected arrive scales with the local infectious share from the SEIR curve: arrival time = base time / (1 + 10 x infectious share) (fictional rule). Manhattan on Day 4 is far less forgiving than Teton County."
+  ],
+  [
+   "Cold hands",
+   "Drag and hold actions lag and shake more in the cold.",
+   "Control lag = 1 + 0.02 x degrees below 32°F, using the stop's real NOAA January normal (fictional rule on real data)."
+  ],
+  [
+   "Step order",
+   "Each game has a real-world correct order. Steps done out of order trigger the consequence listed for that game.",
+   "Procedures follow standard guidance (tire changing, jump-starting, first aid, cold injuries, water safety, carbon monoxide)."
+  ],
+  [
+   "Tiers",
+   "EASY shows a checklist and a long timer; NORMAL hides the checklist; HARD hides it, shortens the timer and adds a second problem.",
+   "Same HARD/NORMAL/EASY roll rules as the original eight games."
+  ],
+  [
+   "No repeats",
+   "A mini game does not repeat in one playthrough. Story-linked games play when their scene calls for them; any not yet played join the random roll pool.",
+   "The original eight games stay in the roll pool, so 18 games in total."
+  ]
+ ],
+ "games": [
+  [
+   "Change a Flat in the Dark",
+   "Drag tools on a close-up of the wheel; hold the flashlight steady with the other hand (mouse button or second finger).",
+   "1. Wedge the wheel opposite the flat. 2. Loosen lug nuts a half turn while the tire is on the ground. 3. Jack at the frame point. 4. Remove nuts, swap the tire. 5. Hand-tighten, lower, then tighten in a star pattern.",
+   "Jacking before loosening: the wheel spins (time, noise). Wrong jack point: the car drops (injury). Dropped lug nut: search the snow (noise).",
+   "Cold hands (NOAA normal); noise meter (local infection).",
+   "EASY 120 s, checklist | NORMAL 90 s | HARD 70 s, one lug nut is seized",
+   "Keep your vehicle; no time lost",
+   "Vehicle lost OR 3 h delay; -10 health if the car drops"
+  ],
+  [
+   "Jump-Start a Dead Battery",
+   "Drag cable clamps onto battery terminals, then hold to crank and watch the dash lights.",
+   "1. Red clamp on the dead battery (+). 2. Red on the good battery (+). 3. Black on the good battery (-). 4. Black on bare metal away from the dead battery. 5. Run the good car, then crank. Remove in reverse order.",
+   "Wrong order or touching clamps: sparks (injury -8, big noise). Cranking too long: battery drains, start over.",
+   "Cold hands; cold batteries need more cranking attempts below 20°F (NOAA normal).",
+   "EASY labeled terminals | NORMAL unlabeled | HARD dirty terminals to scrape first",
+   "Vehicle starts; +2 h saved",
+   "Stranded: plays the On Foot fallback"
+  ],
+  [
+   "Treat a Wound",
+   "Open a first-aid kit and drag items onto the wound; hold pressure with a press-and-hold gauge.",
+   "1. Gloves. 2. Firm direct pressure until bleeding slows (hold the gauge in the green). 3. Rinse with clean water. 4. Look closely: bite marks or not. 5. Bandage and note the time.",
+   "Too little pressure: bleeding continues (-5 health per 10 s). Alcohol in a deep wound: stings (noise). Skip the look: a bite stays hidden.",
+   "Infection system: a correct check tells you whether you were bitten, so treatment can start before symptoms (rabies-style rule).",
+   "EASY 90 s, kit labeled | NORMAL 60 s | HARD 45 s, two wounds",
+   "+10 health; learn your true infection status",
+   "-10 health; infection status stays hidden"
+  ],
+  [
+   "Cold Emergency Triage",
+   "Check a shivering companion (tap to inspect speech, skin, fingers), then drag actions into order.",
+   "1. Out of the wind. 2. Remove wet clothes. 3. Dry layers and a sleeping bag. 4. Warm sweet drink if alert. 5. Frostbite: rewarm in warm, not hot, water; don't rub.",
+   "Rubbing frostbite or using hot water: tissue damage (-10 health). Skipping wet clothes: condition worsens on the timer.",
+   "Difficulty (how fast the companion worsens) uses the stop's real NOAA January normal.",
+   "EASY 120 s, signs labeled | NORMAL 90 s | HARD 60 s, companion also has frostbite",
+   "Companion saved; +10 health",
+   "Companion lost or -15 health"
+  ],
+  [
+   "Make Water Safe",
+   "Pick a water source, pour it through a cloth filter, light the stove, and stop the boil timer at the right moment (or count bleach drops from the label chart).",
+   "1. Choose the clearest source. 2. Filter through cloth. 3. Rolling boil 1 minute, or 3 minutes above 6,500 ft (CDC guidance). 4. Cool and store covered.",
+   "Boil too short: sick later (-15 health over 12 h). Boil far too long: stove fuel wasted (-1 gal fuel). Wrong source: worse odds.",
+   "Elevation from the real NOAA station: Laramie (about 7,270 ft), Rock Springs (about 6,740 ft), Dillon (about 9,070 ft) need the longer boil.",
+   "EASY elevation shown | NORMAL you must check the map | HARD the stove sputters",
+   "+30 water",
+   "-15 health over the next 12 h"
+  ],
+  [
+   "Siphon Fuel",
+   "Feed a hose into the tank, squeeze a pump bulb in rhythm, and keep the gas can below the tank.",
+   "1. Hose past the anti-rollover valve (wiggle to feel it). 2. Can on the ground, below the tank. 3. Pump the bulb until flow starts. 4. Stop before the can overflows.",
+   "Can held above the tank: no flow. Over-pumping: spill (fire risk, injury -8, noise). Forcing the hose: it jams.",
+   "Noise meter uses local infection; cold hands slow the pump rhythm.",
+   "EASY 90 s | NORMAL 70 s | HARD 50 s, tank half empty",
+   "+5 to +10 gal fuel (by how well you did)",
+   "No fuel; possible -8 health"
+  ],
+  [
+   "Put On Tire Chains",
+   "Drape a chain over the tire, connect hooks on the inside then the outside, then tighten and drive a few feet to recheck.",
+   "1. Lay the chain flat, no twists. 2. Drape over the tire. 3. Hook the inside first. 4. Hook the outside. 5. Tighten, drive 10 ft, retighten.",
+   "Twisted chain or loose hooks: it snaps on the climb (injury -10, time). Skipping the recheck: loosens halfway.",
+   "Cold hands; plays on the snowy mountain stops (NOAA snowfall).",
+   "EASY 120 s | NORMAL 90 s | HARD 60 s, both tires",
+   "Mountain crossing at low risk",
+   "Slide on the grade: -15 health or a 3 h delay"
+  ],
+  [
+   "Navigate by Map and Compass",
+   "A paper road map of the real counties on your route. Rotate the compass, read a bearing, and trace a detour while watching the odometer.",
+   "1. Orient the map to north. 2. Mark where you are. 3. Pick roads that avoid the closure. 4. Follow the bearing; check landmarks every few miles.",
+   "Wrong bearing: extra miles and fuel. Ignoring landmarks: a dead end.",
+   "Real county names and road distances (OpenStreetMap/OSRM) on the map.",
+   "EASY landmarks marked | NORMAL some marked | HARD night, flashlight only",
+   "Shortcut: -3 h travel",
+   "+40 miles and fuel used"
+  ],
+  [
+   "Find the Emergency Broadcast",
+   "Turn a radio dial through static, fine-tune by ear (the signal clears as you get close), and type the key facts you hear.",
+   "1. Scan the NOAA Weather Radio band (162.400-162.550 MHz). 2. Fine-tune until the static clears. 3. Note closures, safe-zone hours, and the weather.",
+   "Moving too fast: you miss the message. Wrong notes: you act on bad info.",
+   "Real NOAA Weather Radio frequencies; the message names real towns and road closures on your route.",
+   "EASY strong signal | NORMAL weak signal | HARD signal drifts",
+   "Route info: a shortcut or warning (acts like an ally flag)",
+   "No info"
+  ],
+  [
+   "Snowed In: Carbon Monoxide",
+   "Your car is buried. Dig around the car, check the tailpipe, crack a window, then run the heater on a timer.",
+   "1. Clear the tailpipe completely. 2. Crack a window on the downwind side. 3. Run the engine about 10 minutes an hour. 4. Stay awake for the timer.",
+   "Running the engine with a blocked tailpipe: the screen blurs and health drains until you fix it. Never running it: cold damage.",
+   "Snow depth uses the stop's real NOAA January snowfall.",
+   "EASY reminders shown | NORMAL none | HARD fuel low, so every minute of heat costs fuel",
+   "A safe night: +10 health",
+   "-15 health (CO) or -10 health (cold)"
+  ]
+ ],
+ "placement": {
+  "NYC": [
+   [
+    "NYC-CB1",
+    "B",
+    "Treat a Wound",
+    "Cleaning and checking the aching arm"
+   ],
+   [
+    "NYC-W2",
+    "C",
+    "Snowed In: Carbon Monoxide",
+    "Staying with the car and running the engine 10 minutes an hour"
+   ],
+   [
+    "NYC-R2",
+    "C",
+    "Find the Emergency Broadcast",
+    "Tuning in the meteorologist's forecast broadcast"
+   ],
+   [
+    "NYC-07M",
+    "★",
+    "Siphon Fuel",
+    "The ranch fuel tank from the hunter's map"
+   ]
+  ],
+  "BOS": [
+   [
+    "BOS-CB2",
+    "A",
+    "Treat a Wound",
+    "Rebandaging the hitchhiker's bleeding hand"
+   ],
+   [
+    "BOS-02M",
+    "C",
+    "Jump-Start a Dead Battery",
+    "Restarting the DJ's generator"
+   ],
+   [
+    "BOS-W2",
+    "A",
+    "Navigate by Map and Compass",
+    "Finding the way back to the interstate"
+   ],
+   [
+    "BOS-07M",
+    "B",
+    "Make Water Safe",
+    "Filling every container at the Blue Hole spring"
+   ]
+  ],
+  "PIT": [
+   [
+    "PIT-05M",
+    "A",
+    "Put On Tire Chains",
+    "Chaining up before the Eisenhower Tunnel climb"
+   ],
+   [
+    "PIT-CB2",
+    "D",
+    "Cold Emergency Triage",
+    "Dry clothes and a sleeping bag for the shivering player"
+   ],
+   [
+    "PIT-04M",
+    "A",
+    "Siphon Fuel",
+    "Siphoning cars outside the last gas station"
+   ],
+   [
+    "PIT-CB1",
+    "B",
+    "Treat a Wound",
+    "Checking the red mark on the girl's wrist"
+   ]
+  ],
+  "SLC": [
+   [
+    "SLC-W2",
+    "B",
+    "Change a Flat in the Dark",
+    "Swapping to the spare during the spike-strip ambush"
+   ],
+   [
+    "SLC-W1",
+    "C",
+    "Snowed In: Carbon Monoxide",
+    "The candle-and-cracked-window night in the dead car"
+   ],
+   [
+    "SLC-CB2",
+    "A",
+    "Treat a Wound",
+    "Cleaning the swollen hand"
+   ],
+   [
+    "SLC-02N",
+    "A",
+    "Make Water Safe",
+    "Melting and boiling snow in the gym parking lot in Laramie, above 7,000 ft"
+   ]
+  ],
+  "JAC": [
+   [
+    "JAC-02N",
+    "A",
+    "Siphon Fuel",
+    "Siphoning gas from cars on the off-ramp"
+   ],
+   [
+    "JAC-06M",
+    "D",
+    "Snowed In: Carbon Monoxide",
+    "Digging the car out of four feet of snow"
+   ],
+   [
+    "JAC-03M",
+    "C",
+    "Navigate by Map and Compass",
+    "Plotting the pilot's route intel"
+   ],
+   [
+    "JAC-04M",
+    "C",
+    "Jump-Start a Dead Battery",
+    "The battery dies while you wait out the blizzard in the barn"
+   ]
+  ],
+  "SEA": [
+   [
+    "SEA-01N",
+    "D",
+    "Put On Tire Chains",
+    "Chains before Snoqualmie Pass"
+   ],
+   [
+    "SEA-CB1",
+    "A",
+    "Cold Emergency Triage",
+    "Rewarming white fingertips"
+   ],
+   [
+    "SEA-02N",
+    "C",
+    "Make Water Safe",
+    "Melting snow near the toxic lake"
+   ],
+   [
+    "SEA-05M",
+    "D",
+    "Jump-Start a Dead Battery",
+    "After the morning in shelter, the battery is dead in the record cold"
+   ]
+  ],
+  "AUS": [
+   [
+    "AUS-05N",
+    "D",
+    "Put On Tire Chains",
+    "Fitting the ski patrol's chains"
+   ],
+   [
+    "AUS-W2",
+    "D",
+    "Cold Emergency Triage",
+    "Dry clothes after the frozen creek"
+   ],
+   [
+    "AUS-CB1",
+    "A",
+    "Treat a Wound",
+    "Checking yourself for bites after the concert crowd"
+   ],
+   [
+    "AUS-07M",
+    "A",
+    "Find the Emergency Broadcast",
+    "Waiting out the nor'easter at the service area"
+   ]
+  ]
+ }
+}
