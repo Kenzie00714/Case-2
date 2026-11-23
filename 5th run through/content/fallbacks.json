@@ -1,0 +1,37 @@
+{
+ "note": "Fallback scenes play when travel progress and the story disagree: the tank is empty or the vehicle is gone. They use the same option format as the main scenarios, plus their own decision attributes.",
+ "scenes": [
+  {
+   "id": "FB-FUEL",
+   "kind": "out_of_fuel",
+   "title": "Running on Fumes",
+   "text": "The engine coughs and dies on the shoulder. The needle sits on E. The next town is somewhere ahead in the snow, and the light is going.",
+   "options": [
+    {"letter": "A", "rating": "OKAY", "text": "Siphon gas from the abandoned cars along the shoulder", "note": "Slow, cold work, but most stalled cars still have a gallon or two.", "food": 0, "water": 0, "heal": 0, "injury_chance": 18, "damage": 10,
+     "attrs": {"activity": "scavenge", "hours": 2.0, "exposure": "medium", "setting": "open", "fuel_gal": 6.0, "vehicle": "", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "B", "rating": "RISKY", "text": "Walk to the next exit with the gas can", "note": "The station is looted, but the tanks underground still pump by hand. Hours on foot in the open.", "food": 0, "water": 0, "heal": 0, "injury_chance": 35, "damage": 15,
+     "attrs": {"activity": "scavenge", "hours": 6.0, "exposure": "medium", "setting": "open", "fuel_gal": 10.0, "vehicle": "", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "C", "rating": "RISKY", "text": "Flag down the next set of headlights and offer food for fuel", "note": "A family shares five gallons, but you stood close to strangers.", "food": -10, "water": 0, "heal": 0, "injury_chance": 30, "damage": 12,
+     "attrs": {"activity": "social", "hours": 1.0, "exposure": "high", "setting": "open", "fuel_gal": 5.0, "vehicle": "", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "D", "rating": "WORST", "text": "Lock the doors and wait for a patrol to come by", "note": "No patrol comes. You lose half a day and you're still empty.", "food": 0, "water": 0, "heal": 0, "injury_chance": 60, "damage": 20,
+     "attrs": {"activity": "shelter", "hours": 12.0, "exposure": "low", "setting": "vehicle", "fuel_gal": 0.0, "vehicle": "", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}}
+   ]
+  },
+  {
+   "id": "FB-CAR",
+   "kind": "no_vehicle",
+   "title": "On Foot",
+   "text": "You have no vehicle, and the next stop is still far down the highway. Walking the whole way would take days you don't have.",
+   "options": [
+    {"letter": "A", "rating": "BEST", "text": "Search the motel lot for a car with keys in it", "note": "A pickup with a quarter tank and keys behind the visor.", "food": 0, "water": 0, "heal": 0, "injury_chance": 8, "damage": 8,
+     "attrs": {"activity": "scavenge", "hours": 2.0, "exposure": "medium", "setting": "open", "fuel_gal": 0.0, "vehicle": "gained", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "B", "rating": "OKAY", "text": "Hitch a ride with a convoy of survivors", "note": "They take you as far as the next stop, but you ride packed in a truck bed.", "food": 0, "water": 0, "heal": 0, "injury_chance": 15, "damage": 10,
+     "attrs": {"activity": "social", "hours": 1.0, "exposure": "high", "setting": "vehicle", "fuel_gal": 0.0, "vehicle": "gained", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "C", "rating": "RISKY", "text": "Break into the dealership and hotwire something", "note": "It works, but the alarm brings the infected out of the service bays.", "food": 0, "water": 0, "heal": 0, "injury_chance": 40, "damage": 18,
+     "attrs": {"activity": "contact", "hours": 1.5, "exposure": "contact", "setting": "open", "fuel_gal": 0.0, "vehicle": "gained", "miles_bonus": 0, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene"}},
+    {"letter": "D", "rating": "WORST", "text": "Start walking and hope something turns up", "note": "Nothing turns up. You walk for hours in the cold and get almost nowhere.", "food": 0, "water": 0, "heal": 0, "injury_chance": 65, "damage": 22,
+     "attrs": {"activity": "travel", "hours": 6.0, "exposure": "low", "setting": "open", "fuel_gal": 0.0, "vehicle": "", "miles_bonus": 18, "travel_hours_saved": 0, "denied_entry": false, "medicine": false, "evidence": "fallback scene: 6 hours at 3 mph"}}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+# The game and server need only the Python standard library (Python 3.10+).
+# Needed for tests and the Monte Carlo report charts:
+pytest>=7
+matplotlib>=3.7
+# Optional, for the headless-browser playthrough test:
+# playwright>=1.40

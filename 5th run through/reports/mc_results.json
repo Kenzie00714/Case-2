@@ -1,0 +1,1040 @@
+{
+ "runs_per_route": 1000,
+ "seeds": "1..1000",
+ "results": {
+  "balanced": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.953,
+    "endings": {
+     "VICTORY": 0.953,
+     "DIED": 0.0,
+     "TURNED": 0.034,
+     "TOO_LATE": 0.013,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.444115726441116,
+    "avg_days_survivors": 6.544923845431134,
+    "avg_health_survivors": 94.9401888772298,
+    "avg_food": 83.64892746409134,
+    "avg_water": 79.72909613886074,
+    "avg_fuel": 16.985189589076633,
+    "infection_rate": 0.381,
+    "avg_injuries": 1.293,
+    "avg_miles_left": 39.94250723446405
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.951,
+    "endings": {
+     "VICTORY": 0.951,
+     "DIED": 0.0,
+     "TURNED": 0.046,
+     "TOO_LATE": 0.003,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.4667249535294005,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 95.12092534174553,
+    "avg_food": 44.501423691433246,
+    "avg_water": 88.72943434640436,
+    "avg_fuel": 14.137715499645491,
+    "infection_rate": 0.48,
+    "avg_injuries": 2.006,
+    "avg_miles_left": 28.013461998696478
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.959,
+    "endings": {
+     "VICTORY": 0.959,
+     "DIED": 0.0,
+     "TURNED": 0.035,
+     "TOO_LATE": 0.006,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.469115201310633,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 95.79874869655892,
+    "avg_food": 74.90072005188064,
+    "avg_water": 71.91031084986902,
+    "avg_fuel": 15.175861384778251,
+    "infection_rate": 0.323,
+    "avg_injuries": 0.812,
+    "avg_miles_left": 24.205012477133536
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.991,
+    "endings": {
+     "VICTORY": 0.991,
+     "DIED": 0.0,
+     "TURNED": 0.009,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.506387145740292,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 90.34712411705348,
+    "avg_food": 60.22754721572504,
+    "avg_water": 75.6264237518608,
+    "avg_fuel": 23.299766112292986,
+    "infection_rate": 0.391,
+    "avg_injuries": 1.696,
+    "avg_miles_left": 3.771522185437048
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.959,
+    "endings": {
+     "VICTORY": 0.959,
+     "DIED": 0.0,
+     "TURNED": 0.038,
+     "TOO_LATE": 0.003,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.450814620362939,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 86.69343065693431,
+    "avg_food": 51.83348692134429,
+    "avg_water": 52.176280677364765,
+    "avg_fuel": 13.521223973563195,
+    "infection_rate": 0.362,
+    "avg_injuries": 1.959,
+    "avg_miles_left": 20.897176757793012
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.969,
+    "endings": {
+     "VICTORY": 0.969,
+     "DIED": 0.0,
+     "TURNED": 0.023,
+     "TOO_LATE": 0.008,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.483686763017142,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 92.75748194014447,
+    "avg_food": 81.88507268564837,
+    "avg_water": 77.63011881457254,
+    "avg_fuel": 23.266847946310385,
+    "infection_rate": 0.272,
+    "avg_injuries": 1.627,
+    "avg_miles_left": 9.204855624403486
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.94,
+    "endings": {
+     "VICTORY": 0.94,
+     "DIED": 0.0,
+     "TURNED": 0.051,
+     "TOO_LATE": 0.009,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.415292552211572,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 93.67340425531916,
+    "avg_food": 71.66215399796896,
+    "avg_water": 80.36890952897569,
+    "avg_fuel": 20.353248309611956,
+    "infection_rate": 0.421,
+    "avg_injuries": 1.202,
+    "avg_miles_left": 29.14285019237652
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.9602857142857143,
+    "endings": {
+     "VICTORY": 0.9602857142857143,
+     "DIED": 0.0,
+     "TURNED": 0.03371428571428572,
+     "TOO_LATE": 0.006,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.462305280373299,
+    "avg_days_survivors": 6.530168341470177,
+    "avg_health_survivors": 92.74278488545076,
+    "avg_food": 66.95133314687027,
+    "avg_water": 75.16722487255828,
+    "avg_fuel": 18.105693259325555,
+    "infection_rate": 0.3757142857142857,
+    "avg_injuries": 1.5135714285714286,
+    "avg_miles_left": 22.168198067186303
+   }
+  },
+  "lowest_risk": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.972,
+    "endings": {
+     "VICTORY": 0.972,
+     "DIED": 0.0,
+     "TURNED": 0.025,
+     "TOO_LATE": 0.003,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.463205066940804,
+    "avg_days_survivors": 6.522644818335956,
+    "avg_health_survivors": 92.72799902413512,
+    "avg_food": 62.38186385240042,
+    "avg_water": 65.03539303657847,
+    "avg_fuel": 15.17469735146993,
+    "infection_rate": 0.27,
+    "avg_injuries": 1.405,
+    "avg_miles_left": 23.476404213605864
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.951,
+    "endings": {
+     "VICTORY": 0.951,
+     "DIED": 0.0,
+     "TURNED": 0.041,
+     "TOO_LATE": 0.008,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.478341139387277,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 90.5797371789536,
+    "avg_food": 27.441740259639232,
+    "avg_water": 84.91752729591349,
+    "avg_fuel": 13.834474602255794,
+    "infection_rate": 0.4,
+    "avg_injuries": 1.939,
+    "avg_miles_left": 23.70204305813249
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.965,
+    "endings": {
+     "VICTORY": 0.965,
+     "DIED": 0.0,
+     "TURNED": 0.029,
+     "TOO_LATE": 0.006,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.47927258922607,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 96.28082901554404,
+    "avg_food": 61.49500167898992,
+    "avg_water": 64.20319082506715,
+    "avg_fuel": 15.207057835716093,
+    "infection_rate": 0.269,
+    "avg_injuries": 0.761,
+    "avg_miles_left": 20.778511927841404
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.943,
+    "endings": {
+     "VICTORY": 0.943,
+     "DIED": 0.0,
+     "TURNED": 0.041,
+     "TOO_LATE": 0.016,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.475412797670046,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 84.99045599151644,
+    "avg_food": 42.4231273445663,
+    "avg_water": 62.08823322039461,
+    "avg_fuel": 22.680463263614534,
+    "infection_rate": 0.399,
+    "avg_injuries": 2.323,
+    "avg_miles_left": 8.15140329029541
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.95,
+    "endings": {
+     "VICTORY": 0.95,
+     "DIED": 0.0,
+     "TURNED": 0.035,
+     "TOO_LATE": 0.015,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.456786722529169,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 79.58969033979496,
+    "avg_food": 15.054850330179244,
+    "avg_water": 29.626448488546927,
+    "avg_fuel": 13.722543982168192,
+    "infection_rate": 0.343,
+    "avg_injuries": 2.048,
+    "avg_miles_left": 20.320861907964954
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.969,
+    "endings": {
+     "VICTORY": 0.969,
+     "DIED": 0.0,
+     "TURNED": 0.019,
+     "TOO_LATE": 0.012,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.494511933146127,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 95.82765737874097,
+    "avg_food": 49.670158404277,
+    "avg_water": 51.93795439818225,
+    "avg_fuel": 23.0773339032854,
+    "infection_rate": 0.233,
+    "avg_injuries": 0.973,
+    "avg_miles_left": 7.12384033494393
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.949,
+    "endings": {
+     "VICTORY": 0.949,
+     "DIED": 0.0,
+     "TURNED": 0.04,
+     "TOO_LATE": 0.011,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.447481630454986,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 92.19415225947002,
+    "avg_food": 30.22891286204835,
+    "avg_water": 73.56505802151274,
+    "avg_fuel": 19.79187515387603,
+    "infection_rate": 0.317,
+    "avg_injuries": 1.427,
+    "avg_miles_left": 20.577793125646224
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.957,
+    "endings": {
+     "VICTORY": 0.957,
+     "DIED": 0.0,
+     "TURNED": 0.032857142857142856,
+     "TOO_LATE": 0.010142857142857143,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.470715982764925,
+    "avg_days_survivors": 6.5270547738601605,
+    "avg_health_survivors": 90.35518755421502,
+    "avg_food": 41.24223639030007,
+    "avg_water": 61.62482932659938,
+    "avg_fuel": 17.641206584626566,
+    "infection_rate": 0.3187142857142857,
+    "avg_injuries": 1.5537142857142856,
+    "avg_miles_left": 17.732979694061466
+   }
+  },
+  "supplies": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.0,
+    "endings": {
+     "VICTORY": 0.0,
+     "DIED": 0.0,
+     "TURNED": 0.07,
+     "TOO_LATE": 0.93,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.5456137484262005,
+    "avg_days_survivors": NaN,
+    "avg_health_survivors": NaN,
+    "avg_food": 81.08987050639179,
+    "avg_water": 76.48735827506961,
+    "avg_fuel": 17.220124954929105,
+    "infection_rate": 0.643,
+    "avg_injuries": 2.109,
+    "avg_miles_left": 88.16013997799185
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.0,
+    "endings": {
+     "VICTORY": 0.0,
+     "DIED": 0.0,
+     "TURNED": 0.047,
+     "TOO_LATE": 0.953,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.775985779245033,
+    "avg_days_survivors": NaN,
+    "avg_health_survivors": NaN,
+    "avg_food": 46.343723834337915,
+    "avg_water": 59.737299973310265,
+    "avg_fuel": 16.714500149541117,
+    "infection_rate": 0.847,
+    "avg_injuries": 3.039,
+    "avg_miles_left": 345.7980165520858
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.0,
+    "endings": {
+     "VICTORY": 0.0,
+     "DIED": 0.0,
+     "TURNED": 0.127,
+     "TOO_LATE": 0.873,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.740869351392372,
+    "avg_days_survivors": NaN,
+    "avg_health_survivors": NaN,
+    "avg_food": 78.26812332311202,
+    "avg_water": 76.06718666030602,
+    "avg_fuel": 15.298247153409598,
+    "infection_rate": 0.696,
+    "avg_injuries": 1.569,
+    "avg_miles_left": 79.55364210510616
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.983,
+    "endings": {
+     "VICTORY": 0.983,
+     "DIED": 0.0,
+     "TURNED": 0.014,
+     "TOO_LATE": 0.003,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.487990906909117,
+    "avg_days_survivors": 6.521108045188029,
+    "avg_health_survivors": 87.66327568667344,
+    "avg_food": 79.1133115585014,
+    "avg_water": 82.58222270025581,
+    "avg_fuel": 23.546440718658353,
+    "infection_rate": 0.794,
+    "avg_injuries": 2.44,
+    "avg_miles_left": 9.260151200291572
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.802,
+    "endings": {
+     "VICTORY": 0.802,
+     "DIED": 0.015,
+     "TURNED": 0.085,
+     "TOO_LATE": 0.098,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.336756394855631,
+    "avg_days_survivors": 6.527098788350965,
+    "avg_health_survivors": 74.48877805486285,
+    "avg_food": 84.39184293466008,
+    "avg_water": 80.40454468820671,
+    "avg_fuel": 15.054055511136923,
+    "infection_rate": 0.787,
+    "avg_injuries": 3.565,
+    "avg_miles_left": 71.27451537687267
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.849,
+    "endings": {
+     "VICTORY": 0.849,
+     "DIED": 0.0,
+     "TURNED": 0.143,
+     "TOO_LATE": 0.008,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.057356140080524,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 93.20259128386337,
+    "avg_food": 84.50559555801418,
+    "avg_water": 80.82279682381828,
+    "avg_fuel": 23.27868687424703,
+    "infection_rate": 0.661,
+    "avg_injuries": 2.15,
+    "avg_miles_left": 210.11297457224808
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.0,
+    "endings": {
+     "VICTORY": 0.0,
+     "DIED": 0.0,
+     "TURNED": 0.096,
+     "TOO_LATE": 0.904,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.6375196651723245,
+    "avg_days_survivors": NaN,
+    "avg_health_survivors": NaN,
+    "avg_food": 85.8520763478053,
+    "avg_water": 82.29898138234866,
+    "avg_fuel": 20.016686517092452,
+    "infection_rate": 0.759,
+    "avg_injuries": 1.675,
+    "avg_miles_left": 68.8066189236166
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.3762857142857143,
+    "endings": {
+     "VICTORY": 0.3762857142857143,
+     "DIED": 0.002142857142857143,
+     "TURNED": 0.08314285714285714,
+     "TOO_LATE": 0.5384285714285715,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.511727426583028,
+    "avg_days_survivors": 6.52955863199594,
+    "avg_health_survivors": 85.4373576309795,
+    "avg_food": 77.08064915183182,
+    "avg_water": 76.91434150047363,
+    "avg_fuel": 18.7326774112878,
+    "infection_rate": 0.741,
+    "avg_injuries": 2.363857142857143,
+    "avg_miles_left": 124.7094369583161
+   }
+  },
+  "speed": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.192,
+    "endings": {
+     "VICTORY": 0.192,
+     "DIED": 0.799,
+     "TURNED": 0.008,
+     "TOO_LATE": 0.001,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 5.158451139087866,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 19.098958333333346,
+    "avg_food": 30.91478177459413,
+    "avg_water": 10.211668561487675,
+    "avg_fuel": 12.546797763886183,
+    "infection_rate": 0.104,
+    "avg_injuries": 4.618,
+    "avg_miles_left": 610.9719098410463
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.176,
+    "endings": {
+     "VICTORY": 0.176,
+     "DIED": 0.806,
+     "TURNED": 0.018,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 5.266759437647491,
+    "avg_days_survivors": 6.541666666666668,
+    "avg_health_survivors": 18.18701975058282,
+    "avg_food": 7.147598576061893,
+    "avg_water": 19.69981124705019,
+    "avg_fuel": 11.359269779726857,
+    "infection_rate": 0.309,
+    "avg_injuries": 5.63,
+    "avg_miles_left": 378.2020869856618
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.055,
+    "endings": {
+     "VICTORY": 0.055,
+     "DIED": 0.938,
+     "TURNED": 0.007,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 5.295163654841311,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 14.192762905552904,
+    "avg_food": 5.633989861012452,
+    "avg_water": 6.101297728353391,
+    "avg_fuel": 13.842378989047457,
+    "infection_rate": 0.153,
+    "avg_injuries": 4.92,
+    "avg_miles_left": 367.89348458405016
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.401,
+    "endings": {
+     "VICTORY": 0.401,
+     "DIED": 0.582,
+     "TURNED": 0.01,
+     "TOO_LATE": 0.007,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.018664261690575,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 25.428571762079194,
+    "avg_food": 23.21406911122786,
+    "avg_water": 4.258881379615479,
+    "avg_fuel": 20.150129743367227,
+    "infection_rate": 0.177,
+    "avg_injuries": 4.148,
+    "avg_miles_left": 21.816691458113386
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.018,
+    "endings": {
+     "VICTORY": 0.018,
+     "DIED": 0.968,
+     "TURNED": 0.014,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.495210817887174,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 17.76150992450225,
+    "avg_food": 12.710612354410326,
+    "avg_water": 4.670989940314032,
+    "avg_fuel": 9.998476991983361,
+    "infection_rate": 0.242,
+    "avg_injuries": 4.966,
+    "avg_miles_left": 580.4029106684715
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.002,
+    "endings": {
+     "VICTORY": 0.002,
+     "DIED": 0.992,
+     "TURNED": 0.006,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.211807290917616,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 15.76872028566748,
+    "avg_food": 7.728941638014064,
+    "avg_water": 4.515586234779295,
+    "avg_fuel": 7.506934291921287,
+    "infection_rate": 0.316,
+    "avg_injuries": 4.897,
+    "avg_miles_left": 568.4751499126486
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.149,
+    "endings": {
+     "VICTORY": 0.149,
+     "DIED": 0.83,
+     "TURNED": 0.019,
+     "TOO_LATE": 0.002,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 5.1946358677362765,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 18.742729306487703,
+    "avg_food": 17.645888317567508,
+    "avg_water": 2.965023684870898,
+    "avg_fuel": 13.03260314027693,
+    "infection_rate": 0.197,
+    "avg_injuries": 4.449,
+    "avg_miles_left": 287.1719234975522
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.14185714285714285,
+    "endings": {
+     "VICTORY": 0.14185714285714285,
+     "DIED": 0.845,
+     "TURNED": 0.011714285714285714,
+     "TOO_LATE": 0.0014285714285714286,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 5.091527495686901,
+    "avg_days_survivors": 6.532875965088956,
+    "avg_health_survivors": 21.137246725459004,
+    "avg_food": 14.999411661841178,
+    "avg_water": 7.48903696806728,
+    "avg_fuel": 12.633798671458472,
+    "infection_rate": 0.214,
+    "avg_injuries": 4.804,
+    "avg_miles_left": 402.13345099250625
+   }
+  },
+  "random": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.058,
+    "endings": {
+     "VICTORY": 0.058,
+     "DIED": 0.616,
+     "TURNED": 0.158,
+     "TOO_LATE": 0.163,
+     "STRANDED": 0.005,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.611452510080052,
+    "avg_days_survivors": 6.538359442246102,
+    "avg_health_survivors": 39.44553477085403,
+    "avg_food": 36.42369269309863,
+    "avg_water": 31.433683526221447,
+    "avg_fuel": 14.285633662677226,
+    "infection_rate": 0.421,
+    "avg_injuries": 4.195,
+    "avg_miles_left": 842.3344072804808
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.077,
+    "endings": {
+     "VICTORY": 0.077,
+     "DIED": 0.577,
+     "TURNED": 0.222,
+     "TOO_LATE": 0.072,
+     "STRANDED": 0.052,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.580398908046799,
+    "avg_days_survivors": 6.554049423600168,
+    "avg_health_survivors": 38.68316174998645,
+    "avg_food": 23.03644300789237,
+    "avg_water": 28.23961818778699,
+    "avg_fuel": 11.684918675462288,
+    "infection_rate": 0.627,
+    "avg_injuries": 4.402,
+    "avg_miles_left": 906.5220314300199
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.141,
+    "endings": {
+     "VICTORY": 0.141,
+     "DIED": 0.615,
+     "TURNED": 0.161,
+     "TOO_LATE": 0.075,
+     "STRANDED": 0.008,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.589667052790321,
+    "avg_days_survivors": 6.583607938210657,
+    "avg_health_survivors": 35.69801638031764,
+    "avg_food": 37.067499258809654,
+    "avg_water": 33.82785768170552,
+    "avg_fuel": 15.989055147699165,
+    "infection_rate": 0.452,
+    "avg_injuries": 4.438,
+    "avg_miles_left": 698.7230664036427
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.125,
+    "endings": {
+     "VICTORY": 0.125,
+     "DIED": 0.617,
+     "TURNED": 0.165,
+     "TOO_LATE": 0.058,
+     "STRANDED": 0.035,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.693861054215581,
+    "avg_days_survivors": 6.541917207850913,
+    "avg_health_survivors": 32.988890498141075,
+    "avg_food": 38.253895213572015,
+    "avg_water": 24.555442067927153,
+    "avg_fuel": 13.38819974767141,
+    "infection_rate": 0.519,
+    "avg_injuries": 4.545,
+    "avg_miles_left": 467.2368398692731
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.045,
+    "endings": {
+     "VICTORY": 0.045,
+     "DIED": 0.617,
+     "TURNED": 0.22,
+     "TOO_LATE": 0.058,
+     "STRANDED": 0.06,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.323364904070815,
+    "avg_days_survivors": 6.532150230799875,
+    "avg_health_survivors": 33.467894575973396,
+    "avg_food": 29.44479491677647,
+    "avg_water": 24.791288452759154,
+    "avg_fuel": 11.47751006256286,
+    "infection_rate": 0.559,
+    "avg_injuries": 4.363,
+    "avg_miles_left": 853.3007718416254
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.097,
+    "endings": {
+     "VICTORY": 0.097,
+     "DIED": 0.701,
+     "TURNED": 0.167,
+     "TOO_LATE": 0.007,
+     "STRANDED": 0.028,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.227767651492371,
+    "avg_days_survivors": 6.558498435412685,
+    "avg_health_survivors": 35.080964464548764,
+    "avg_food": 36.47941654289538,
+    "avg_water": 35.25730766031651,
+    "avg_fuel": 13.23094757809901,
+    "infection_rate": 0.497,
+    "avg_injuries": 4.338,
+    "avg_miles_left": 750.4982140657783
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.145,
+    "endings": {
+     "VICTORY": 0.145,
+     "DIED": 0.516,
+     "TURNED": 0.259,
+     "TOO_LATE": 0.037,
+     "STRANDED": 0.043,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.480092235602838,
+    "avg_days_survivors": 6.568458927113314,
+    "avg_health_survivors": 38.91378097852398,
+    "avg_food": 34.00144631580305,
+    "avg_water": 29.058373395474575,
+    "avg_fuel": 12.840630815095365,
+    "infection_rate": 0.555,
+    "avg_injuries": 4.141,
+    "avg_miles_left": 592.8442156096769
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.09828571428571428,
+    "endings": {
+     "VICTORY": 0.09828571428571428,
+     "DIED": 0.6084285714285714,
+     "TURNED": 0.19314285714285714,
+     "TOO_LATE": 0.06714285714285714,
+     "STRANDED": 0.033,
+     "DENIED": 0.0
+    },
+    "avg_days": 4.500943473756968,
+    "avg_days_survivors": 6.558812029925885,
+    "avg_health_survivors": 36.30070224450134,
+    "avg_food": 33.529598278406795,
+    "avg_water": 29.594795853170194,
+    "avg_fuel": 13.27098509846676,
+    "infection_rate": 0.5185714285714286,
+    "avg_injuries": 4.346,
+    "avg_miles_left": 730.2085066429282
+   }
+  },
+  "best_rating": {
+   "NYC": {
+    "runs": 1000,
+    "survival_rate": 0.918,
+    "endings": {
+     "VICTORY": 0.918,
+     "DIED": 0.0,
+     "TURNED": 0.041,
+     "TOO_LATE": 0.041,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.430337529084629,
+    "avg_days_survivors": 6.543389673635523,
+    "avg_health_survivors": 96.65032679738562,
+    "avg_food": 83.23509159704365,
+    "avg_water": 79.20343966884262,
+    "avg_fuel": 16.96558290992618,
+    "infection_rate": 0.422,
+    "avg_injuries": 1.082,
+    "avg_miles_left": 48.84363330112667
+   },
+   "BOS": {
+    "runs": 1000,
+    "survival_rate": 0.93,
+    "endings": {
+     "VICTORY": 0.93,
+     "DIED": 0.0,
+     "TURNED": 0.063,
+     "TOO_LATE": 0.007,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.456761111457549,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 93.552688172043,
+    "avg_food": 60.039291225799076,
+    "avg_water": 86.6972279381671,
+    "avg_fuel": 14.148399987070528,
+    "infection_rate": 0.51,
+    "avg_injuries": 1.519,
+    "avg_miles_left": 30.063940451440672
+   },
+   "PIT": {
+    "runs": 1000,
+    "survival_rate": 0.939,
+    "endings": {
+     "VICTORY": 0.939,
+     "DIED": 0.0,
+     "TURNED": 0.055,
+     "TOO_LATE": 0.006,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.427326710111416,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 95.97231096911608,
+    "avg_food": 75.15389586734237,
+    "avg_water": 72.49570572174284,
+    "avg_fuel": 15.298794724537709,
+    "infection_rate": 0.324,
+    "avg_injuries": 0.772,
+    "avg_miles_left": 36.763916229221344
+   },
+   "SLC": {
+    "runs": 1000,
+    "survival_rate": 0.988,
+    "endings": {
+     "VICTORY": 0.988,
+     "DIED": 0.0,
+     "TURNED": 0.012,
+     "TOO_LATE": 0.0,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.491007007000939,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 91.16902834008097,
+    "avg_food": 76.39727060246756,
+    "avg_water": 69.98953218795845,
+    "avg_fuel": 23.607980961851833,
+    "infection_rate": 0.557,
+    "avg_injuries": 1.672,
+    "avg_miles_left": 8.088729400176257
+   },
+   "JAC": {
+    "runs": 1000,
+    "survival_rate": 0.943,
+    "endings": {
+     "VICTORY": 0.943,
+     "DIED": 0.0,
+     "TURNED": 0.046,
+     "TOO_LATE": 0.011,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.435066765794963,
+    "avg_days_survivors": 6.520833333333333,
+    "avg_health_survivors": 94.95440084835631,
+    "avg_food": 62.40144137725798,
+    "avg_water": 71.28392004227918,
+    "avg_fuel": 13.636356487181022,
+    "infection_rate": 0.518,
+    "avg_injuries": 1.402,
+    "avg_miles_left": 29.068938844277245
+   },
+   "SEA": {
+    "runs": 1000,
+    "survival_rate": 0.946,
+    "endings": {
+     "VICTORY": 0.946,
+     "DIED": 0.0,
+     "TURNED": 0.041,
+     "TOO_LATE": 0.013,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.4729396257050995,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 97.28646934460888,
+    "avg_food": 69.84970278893968,
+    "avg_water": 65.29660639667617,
+    "avg_fuel": 23.292454497492844,
+    "infection_rate": 0.35,
+    "avg_injuries": 0.88,
+    "avg_miles_left": 19.96145929645869
+   },
+   "AUS": {
+    "runs": 1000,
+    "survival_rate": 0.891,
+    "endings": {
+     "VICTORY": 0.891,
+     "DIED": 0.0,
+     "TURNED": 0.071,
+     "TOO_LATE": 0.038,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.395567619649087,
+    "avg_days_survivors": 6.541666666666667,
+    "avg_health_survivors": 93.4668911335578,
+    "avg_food": 90.97114015323136,
+    "avg_water": 88.6577131179144,
+    "avg_fuel": 17.0581798417394,
+    "infection_rate": 0.542,
+    "avg_injuries": 1.105,
+    "avg_miles_left": 40.116904810250276
+   },
+   "ALL": {
+    "runs": 7000,
+    "survival_rate": 0.9364285714285714,
+    "endings": {
+     "VICTORY": 0.9364285714285714,
+     "DIED": 0.0,
+     "TURNED": 0.047,
+     "TOO_LATE": 0.01657142857142857,
+     "STRANDED": 0.0,
+     "DENIED": 0.0
+    },
+    "avg_days": 6.444143766971955,
+    "avg_days_survivors": 6.535770793856711,
+    "avg_health_survivors": 94.7026697177727,
+    "avg_food": 74.00683337315454,
+    "avg_water": 76.23202072479725,
+    "avg_fuel": 17.7153927728285,
+    "infection_rate": 0.4604285714285714,
+    "avg_injuries": 1.2045714285714286,
+    "avg_miles_left": 30.415360333278738
+   }
+  }
+ },
+ "survival_vs_beta_balanced": [
+  [
+   1.0,
+   0.9921428571428571
+  ],
+  [
+   1.5,
+   0.9707142857142858
+  ],
+  [
+   2.0,
+   0.9357142857142857
+  ]
+ ]
+}

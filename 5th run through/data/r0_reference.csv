@@ -1,0 +1,8 @@
+disease,r0_low,r0_high,r0_central,measure,source,url,entered
+Measles,12,18,,commonly cited range,"Guerra et al., Lancet Infect Dis 2017;17:e420-e428",https://pubmed.ncbi.nlm.nih.gov/28757186/,2026-11-19
+Seasonal influenza,1.19,1.37,1.28,median (IQR) of 47 estimates,"Biggerstaff et al., BMC Infect Dis 2014;14:480",https://doi.org/10.1186/1471-2334-14-480,2026-11-19
+1918 pandemic influenza,1.47,2.27,1.8,median (IQR) of 51 estimates,"Biggerstaff et al., BMC Infect Dis 2014;14:480",https://doi.org/10.1186/1471-2334-14-480,2026-11-19
+1957 pandemic influenza,1.53,1.7,1.65,median (IQR),"Biggerstaff et al., BMC Infect Dis 2014;14:480",https://doi.org/10.1186/1471-2334-14-480,2026-11-19
+COVID-19 (original strain),1.4,6.49,2.79,median (range) of early estimates,"Liu et al., J Travel Med 2020;27(2):taaa021",https://doi.org/10.1093/jtm/taaa021,2026-11-19
+COVID-19 (Delta variant),,,5.08,mean of estimates,"Liu & Rocklov, J Travel Med 2021;28(7):taab124",https://doi.org/10.1093/jtm/taab124,2026-11-19
+"Canine rabies (dogs, Tanzania)",,2,1.2,about 1.2 in the study area; under 2 across its historic range,"Hampson et al., PLoS Biol 2009;7(3):e53",https://doi.org/10.1371/journal.pbio.1000053,2026-11-19

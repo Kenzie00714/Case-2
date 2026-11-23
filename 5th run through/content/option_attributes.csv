@@ -1,0 +1,566 @@
+option_key,activity,hours,exposure,setting,fuel_gal,vehicle,miles_bonus,travel_hours_saved,denied_entry,medicine,evidence
+NYC-01M:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-01M:B,travel,0.5,high,vehicle,0.0,,0.0,0.0,0,0,high exposure: packed
+NYC-01M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-01M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-01N:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-01N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-01N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-01N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-02M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-02M:B,travel,0.5,low,vehicle,0.0,gained,0.0,0.0,0,0,vehicle gained: Take the tow truck
+NYC-02M:C,scavenge,1.5,high,open,0.0,gained,0.0,0.0,0,0,high exposure: showroom; vehicle gained: Grab a new car
+NYC-02M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-02N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-02N:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-02N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-02N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-03M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-03M:B,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+NYC-03M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-03M:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-03N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-03N:B,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+NYC-03N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-03N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-04M:A,travel,0.5,high,vehicle,0.0,,0.0,0.0,0,0,high exposure: crowd
+NYC-04M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-04M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-04M:D,shelter,1.0,high,shelter,0.0,,0.0,0.0,0,0,high exposure: crowd
+NYC-04N:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-04N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-04N:C,travel,0.5,low,open,0.0,gained,0.0,0.0,0,0,vehicle gained: keys in the cab
+NYC-04N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-05M:A,travel,12.5,low,open,0.0,,0.0,0.0,0,0,+12h: half a day
+NYC-05M:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-05M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-05M:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-05N:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-05N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-05N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-05N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-06M:A,travel,0.5,low,open,0.0,,200.0,0.0,0,0,+200 miles: 200 fast miles
+NYC-06M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+NYC-06M:C,shelter,1.0,low,shelter,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+NYC-06M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-06N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-06N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+NYC-06N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-06N:D,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Fill up at the fuel depot
+NYC-07M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-07M:B,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: fill up
+NYC-07M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-07M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-07N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-07N:B,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+NYC-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-07N:D,social,1.0,low,shelter,0.0,,0.0,0.0,1,0,denied entry: lock the gates
+NYC-W1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-W1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-W1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-W1:D,travel,3.5,low,open,0.0,,0.0,0.0,0,0,+3h: takes an hour
+NYC-R1:A,scavenge,7.5,medium,open,0.0,,0.0,0.0,0,0,+6h: waits in text
+NYC-R1:B,travel,12.5,low,open,0.0,,0.0,0.0,0,0,+12h: most of the morning
+NYC-R1:C,social,1.0,low,shelter,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+NYC-R1:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-W2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-W2:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-W2:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-W2:D,travel,3.5,low,open,0.0,,0.0,0.0,0,0,+3h: after two hours
+NYC-R2:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-R2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-R2:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-R2:D,travel,36.5,low,open,0.0,,0.0,0.0,0,0,+36h: days.
+NYC-CB1:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-CB1:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-CB1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: first-aid
+NYC-CB1:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+NYC-CB2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-CB2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-CB2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+NYC-CB2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-01M:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+BOS-01M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-01M:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-01M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-01N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+BOS-01N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-01N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-01N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-02M:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-02M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-02M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-02M:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-02N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-02N:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-02N:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-02N:D,travel,0.5,low,vehicle,0.0,gained,0.0,0.0,0,0,vehicle gained: Take the Humvee
+BOS-03M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-03M:B,shelter,25.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: costs a full day
+BOS-03M:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,1,medicine: pharmacy
+BOS-03M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-03N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-03N:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-03N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-03N:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-04M:A,travel,0.5,low,open,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+BOS-04M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-04M:C,travel,0.5,low,vehicle,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+BOS-04M:D,travel,0.5,low,vehicle,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+BOS-04N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+BOS-04N:B,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+BOS-04N:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,1,medicine: pharmacy
+BOS-04N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-05M:A,travel,0.5,low,vehicle,0.0,lost,0.0,0.0,0,0,vehicle lost: car falls
+BOS-05M:B,travel,0.5,low,open,0.0,,0.0,2.0,0,0,-2h travel: easy detour
+BOS-05M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-05M:D,shelter,43.0,low,shelter,0.0,,0.0,0.0,0,0,+36h: takes days; +6h: waits in text
+BOS-05N:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-05N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-05N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-05N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-06M:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-06M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-06M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-06M:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-06N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-06N:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-06N:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-06N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-07M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-07M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-07M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-07M:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-07N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-07N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-07N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-W1:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-W1:B,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+BOS-W1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-W1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-R1:A,social,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+BOS-R1:B,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+BOS-R1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-R1:D,scavenge,3.5,medium,open,0.0,,0.0,0.0,0,0,+2h: loses time
+BOS-W2:A,social,1.0,low,shelter,10.0,,0.0,2.0,0,0,-2h travel: shortcut; fuel +10 gal: trade a gas can
+BOS-W2:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-W2:C,travel,3.5,low,open,0.0,,0.0,0.0,0,0,+3h: Hours lost
+BOS-W2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-R2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-R2:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+BOS-R2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-R2:D,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Hand-crank
+BOS-CB1:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-CB1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-CB1:C,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slower
+BOS-CB1:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+BOS-CB2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+BOS-CB2:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+BOS-CB2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: first-aid
+BOS-CB2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-01M:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-01M:B,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slowly
+PIT-01M:C,travel,0.5,low,open,0.0,gained,0.0,0.0,0,0,vehicle gained: car and cross the West End Bridge on foot || Walks past the jam. A car with keys
+PIT-01M:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-01N:A,travel,2.5,low,open,0.0,,0.0,0.0,0,0,+2h: loses time
+PIT-01N:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-01N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-01N:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-02M:A,scavenge,1.5,medium,open,0.0,gained,0.0,0.0,0,0,vehicle gained: Take the four-wheel
+PIT-02M:B,scavenge,1.5,medium,open,10.0,,0.0,0.0,0,0,fuel +10 gal: gas cans
+PIT-02M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-02M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-02N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-02N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-02N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-02N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-03M:A,travel,0.5,high,vehicle,0.0,,0.0,0.0,0,0,high exposure: crowd
+PIT-03M:B,travel,0.5,high,vehicle,0.0,,0.0,0.0,0,0,high exposure: crowd
+PIT-03M:C,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+PIT-03M:D,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+PIT-03N:A,social,1.0,low,shelter,10.0,,0.0,0.0,0,0,fuel +10 gal: Trade a gas can
+PIT-03N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-03N:C,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: loses time
+PIT-03N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-04M:A,scavenge,3.5,medium,open,6.0,,0.0,0.0,0,0,+2h: slowly; fuel +6 gal: Siphon
+PIT-04M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-04M:C,scavenge,1.5,medium,open,10.0,,0.0,0.0,0,0,fuel +10 gal: gas cans
+PIT-04M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-04N:A,travel,0.5,high,open,0.0,,0.0,0.0,0,0,high exposure: stadium
+PIT-04N:B,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+PIT-04N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-04N:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-05M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-05M:B,shelter,31.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: costs most of a day; +6h: waits in text
+PIT-05M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-05M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-05N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-05N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-05N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-05N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-06M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-06M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-06M:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-06M:D,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Top off fuel
+PIT-06N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-06N:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-06N:C,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+PIT-06N:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-07M:A,shelter,10.0,low,shelter,0.0,,0.0,0.0,0,0,+3h: Hours wasted; +6h: waits in text
+PIT-07M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-07M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-07M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-07N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+PIT-07N:B,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+PIT-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-07N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-W1:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-W1:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-W1:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-W1:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-R1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-R1:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-R1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-R1:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+PIT-W2:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-W2:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-W2:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+PIT-W2:D,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+PIT-R2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-R2:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+PIT-R2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-R2:D,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Fill up
+PIT-CB1:A,social,37.0,low,shelter,0.0,,0.0,0.0,0,0,+36h: for days
+PIT-CB1:B,travel,2.5,low,open,0.0,,0.0,0.0,0,0,+2h: slowly
+PIT-CB1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-CB1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: first aid
+PIT-CB2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-CB2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+PIT-CB2:C,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slowly
+PIT-CB2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-01M:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-01M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-01M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-01M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-01N:A,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+SLC-01N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-01N:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-01N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-02M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-02M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-02M:C,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SLC-02M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-02N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-02N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-02N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-02N:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-03M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-03M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-03M:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,1,medicine: Antibiotics
+SLC-03M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-03N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-03N:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-03N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-03N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-04M:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-04M:B,travel,0.5,low,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Fuel up and
+SLC-04M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-04M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SLC-04N:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-04N:B,travel,12.5,low,open,0.0,,0.0,0.0,0,0,+12h: half a day
+SLC-04N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-04N:D,social,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+SLC-05M:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-05M:B,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SLC-05M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-05M:D,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slower
+SLC-05N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-05N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-05N:C,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: loses time
+SLC-05N:D,social,1.0,low,shelter,-6.0,,0.0,0.0,0,0,fuel -6 gal: Trade gas for
+SLC-06M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-06M:B,shelter,19.0,low,shelter,0.0,,0.0,0.0,0,0,+12h: half a day; +6h: waits in text
+SLC-06M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-06M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-06N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-06N:B,shelter,1.0,high,shelter,0.0,,0.0,0.0,0,0,high exposure: mall
+SLC-06N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-06N:D,scavenge,1.5,high,open,0.0,,0.0,0.0,0,0,high exposure: mall
+SLC-07M:A,travel,2.5,low,vehicle,0.0,,0.0,0.0,0,0,+2h: Slow but
+SLC-07M:B,social,4.0,low,shelter,0.0,,0.0,0.0,0,0,+3h: drifts for an hour
+SLC-07M:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-07M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-07N:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-07N:B,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time wasted; +6h: waits in text
+SLC-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,1,0,denied entry: turned away
+SLC-07N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-W1:A,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+SLC-W1:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-W1:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-W1:D,travel,0.5,low,open,0.0,,40.0,0.0,0,0,+40 miles: 40 miles
+SLC-R1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-R1:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-R1:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-R1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-W2:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-W2:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-W2:B:alt,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-W2:C,travel,0.5,low,open,0.0,lost,0.0,0.0,0,0,vehicle lost: loses the car
+SLC-W2:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-R2:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-R2:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-R2:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SLC-R2:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-CB1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: first aid
+SLC-CB1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-CB1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-CB1:D,social,37.0,low,shelter,0.0,,0.0,0.0,0,0,+36h: for days
+SLC-CB2:A,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: antibiotics
+SLC-CB2:A:alt,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: pharmacy
+SLC-CB2:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SLC-CB2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SLC-CB2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-01M:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-01M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-01M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-01M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-01N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-01N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-01N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-01N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-02M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-02M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-02M:C,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+JAC-02M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-02N:A,scavenge,1.5,high,open,6.0,,0.0,0.0,0,0,high exposure: crowd; fuel +6 gal: siphon
+JAC-02N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-02N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-02N:D,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+JAC-03M:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-03M:B,social,1.0,low,shelter,0.0,lost,200.0,0.0,0,0,vehicle lost: car stays behind; +200 miles: 200 miles
+JAC-03M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-03M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-03N:A,shelter,31.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: loses a day; +6h: waits in text
+JAC-03N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-03N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-03N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-04M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-04M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-04M:B:alt,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-04M:C,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+JAC-04M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-04N:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-04N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-04N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-04N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-05M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-05M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-05M:C,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time lost; +6h: waits in text
+JAC-05M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-05N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-05N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-05N:C,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+JAC-05N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-06M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-06M:A:alt,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-06M:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-06M:C,travel,0.5,low,vehicle,0.0,lost,0.0,0.0,0,0,vehicle lost: car isn't going anywhere
+JAC-06M:D,travel,3.5,low,open,0.0,,0.0,0.0,0,0,+3h: Hours of shoveling
+JAC-06N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+JAC-06N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-06N:C,shelter,1.0,low,shelter,0.0,lost,0.0,0.0,0,0,vehicle lost: car is half-buried
+JAC-06N:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-07M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-07M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-07M:B:alt,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-07M:C,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time lost; +6h: waits in text
+JAC-07M:D,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+JAC-07N:A,travel,0.5,low,open,0.0,,0.0,0.0,1,0,denied entry: refuses to take
+JAC-07N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-07N:C,social,1.0,low,shelter,-6.0,,0.0,0.0,0,0,fuel -6 gal: Offer the captain fuel
+JAC-07N:D,social,31.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: day late; +6h: waits in text
+JAC-W1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-W1:B,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+JAC-W1:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-W1:D,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+JAC-R1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-R1:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-R1:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-R1:D,social,1.0,low,shelter,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+JAC-W2:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-W2:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-W2:C,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+JAC-W2:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+JAC-R2:A,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slower
+JAC-R2:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-R2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-R2:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+JAC-CB1:A,travel,3.5,low,vehicle,0.0,,0.0,0.0,0,0,+3h: it takes hours
+JAC-CB1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-CB1:C,travel,0.5,low,vehicle,0.0,lost,0.0,0.0,0,0,vehicle lost: engine seizes
+JAC-CB1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-CB2:A,travel,24.5,low,open,0.0,,0.0,0.0,0,0,+24h: loses a day
+JAC-CB2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+JAC-CB2:C,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: wastes time
+JAC-CB2:D,travel,6.5,low,open,0.0,,0.0,0.0,0,0,+6h: waits in text
+SEA-01M:A,travel,36.5,low,vehicle,0.0,,0.0,0.0,0,0,+36h: for days
+SEA-01M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-01M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-01M:D,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SEA-01N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SEA-01N:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-01N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-01N:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-02M:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-02M:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-02M:C,travel,0.5,high,open,0.0,,0.0,0.0,0,1,high exposure: hospital; medicine: medicine
+SEA-02M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-02N:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-02N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-02N:C,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: slowly
+SEA-02N:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-03M:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-03M:B,travel,2.5,low,open,0.0,,0.0,0.0,0,0,+2h: slowly
+SEA-03M:C,travel,0.5,low,open,0.0,lost,0.0,0.0,0,0,vehicle lost: engine dies
+SEA-03M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-03N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-03N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-03N:C,social,1.0,low,shelter,25.0,,0.0,0.0,0,0,fuel +25 gal: A full tank and
+SEA-03N:D,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: fill up
+SEA-04M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-04M:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-04M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-04M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-04N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-04N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-04N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-04N:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-05M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-05M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-05M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-05M:D,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-05N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-05N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-05N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-05N:D,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: time lost
+SEA-06M:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SEA-06M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-06M:C,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time lost; +6h: waits in text
+SEA-06M:D,travel,0.5,high,vehicle,0.0,,0.0,0.0,0,0,high exposure: packed
+SEA-06N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-06N:B,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-06N:C,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+SEA-06N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-07M:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-07M:B,travel,3.5,low,vehicle,0.0,,0.0,0.0,0,0,+3h: it takes hours
+SEA-07M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-07M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-07N:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-07N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-07N:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,1,0,denied entry: gates lock
+SEA-W1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-W1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-W1:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-W1:D,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+SEA-R1:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-R1:B,social,25.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: loses day
+SEA-R1:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-R1:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-W2:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-W2:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-W2:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-W2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-R2:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+SEA-R2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-R2:C,social,25.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: a day lost
+SEA-R2:D,social,1.0,high,shelter,0.0,,0.0,0.0,0,1,high exposure: hospital; medicine: antibiotics
+SEA-CB1:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-CB1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-CB1:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+SEA-CB1:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-CB2:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+SEA-CB2:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+SEA-CB2:C,travel,0.5,low,vehicle,10.0,,0.0,0.0,0,0,fuel +10 gal: shares gas
+SEA-CB2:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-01M:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-01M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-01M:C,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+AUS-01M:D,travel,0.5,high,open,0.0,,0.0,0.0,0,0,high exposure: crowd
+AUS-01N:A,travel,0.5,low,open,0.0,,0.0,2.0,0,0,-2h travel: shortcut
+AUS-01N:B,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time lost; +6h: waits in text
+AUS-01N:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-01N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-02M:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-02M:B,social,1.0,low,shelter,0.0,,0.0,2.0,0,0,-2h travel: fast crossing
+AUS-02M:C,shelter,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+AUS-02M:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-02N:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+AUS-02N:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-02N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-02N:D,social,1.0,high,shelter,0.0,,0.0,0.0,0,0,high exposure: crowd
+AUS-03M:A,shelter,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: time lost
+AUS-03M:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-03M:C,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-03M:D,travel,0.5,high,open,0.0,,0.0,0.0,0,0,high exposure: front doors
+AUS-03N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-03N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-03N:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-03N:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-04M:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-04M:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-04M:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-04M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-04N:A,scavenge,7.5,medium,open,0.0,,0.0,0.0,0,0,+6h: waits in text
+AUS-04N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-04N:C,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: loses time
+AUS-04N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-05M:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-05M:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-05M:C,scavenge,1.5,medium,open,25.0,,0.0,0.0,0,0,fuel +25 gal: Fill the gas tank
+AUS-05M:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-05N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-05N:B,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-05N:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-05N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-06M:A,contact,0.5,contact,open,0.0,,0.0,0.0,0,0,
+AUS-06M:B,shelter,9.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: Time lost; +6h: waits in text
+AUS-06M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-06M:D,scavenge,1.5,medium,open,0.0,gained,0.0,0.0,0,0,vehicle gained: grab a car
+AUS-06N:A,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-06N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-06N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-06N:D,social,3.0,low,shelter,0.0,,0.0,0.0,0,0,+2h: loses time
+AUS-07M:A,shelter,10.0,low,shelter,0.0,,0.0,0.0,0,0,+3h: hours. Waiting; +6h: waits in text
+AUS-07M:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-07M:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-07M:D,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-07N:A,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-07N:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,1,0,denied entry: Arrested
+AUS-07N:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-07N:D,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-W1:A,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-W1:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-W1:C,social,7.0,low,shelter,0.0,,0.0,0.0,0,0,+6h: waits in text
+AUS-W1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-R1:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-R1:B,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-R1:C,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-R1:D,social,25.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: a day lost
+AUS-W2:A,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-W2:B,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-W2:C,travel,0.5,low,vehicle,0.0,,0.0,0.0,0,0,
+AUS-W2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-R2:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-R2:B,social,1.0,low,shelter,0.0,lost,0.0,0.0,0,0,vehicle lost: has no car
+AUS-R2:C,social,1.0,low,shelter,0.0,,0.0,2.0,0,0,"-2h travel: faster, safer route"
+AUS-R2:D,scavenge,1.5,medium,open,0.0,,0.0,0.0,0,0,
+AUS-CB1:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-CB1:B,shelter,25.0,low,shelter,0.0,,0.0,0.0,0,0,+24h: a day lost
+AUS-CB1:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-CB1:D,travel,0.5,low,open,0.0,,0.0,0.0,0,1,medicine: first-aid
+AUS-CB2:A,social,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-CB2:B,travel,0.5,low,open,0.0,,0.0,0.0,0,0,
+AUS-CB2:C,shelter,1.0,low,shelter,0.0,,0.0,0.0,0,0,
+AUS-CB2:D,travel,0.5,low,open,0.0,,0.0,0.0,0,0,

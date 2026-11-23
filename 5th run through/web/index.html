@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zombie Escape</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Night highway in a winter outbreak: frozen navy asphalt, frost text, road-sign orange for hazards. One column, like reading a road atlas by flashlight. */
+  --night: #0e1721;
+  --panel: #16222e;
+  --panel-2: #1c2b39;
+  --line: #2b3d4f;
+  --frost: #e6eef3;
+  --muted: #93a7b7;
+  --hazard: #ff8a1f;
+  --ice: #8ccbe8;
+  --blood: #ef5b5f;
+  --safe: #5cc785;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--night);
+  color: var(--frost);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.5;
+}
+#snow { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+.wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; padding: 20px 16px 48px; display: flex; flex-direction: column; gap: 16px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; letter-spacing: 0.02em; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--hazard); outline-offset: 2px; }
+.hidden { display: none !important; }
+
+/* ---------- title screen ---------- */
+.brand { display: flex; flex-direction: column; gap: 6px; padding-top: 8px; }
+.brand .eyebrow { font-family: var(--mono); font-size: 13px; color: var(--hazard); letter-spacing: 0.12em; text-transform: uppercase; }
+.brand h1 { font-size: clamp(48px, 11vw, 92px); font-weight: 900; line-height: 0.9; text-transform: uppercase; }
+.brand h1 span { color: var(--hazard); }
+.brand p { margin: 4px 0 0; color: var(--muted); max-width: 60ch; }
+.alert { border: 2px solid var(--hazard); background: repeating-linear-gradient(-45deg, rgba(255,138,31,.10) 0 12px, transparent 12px 24px); padding: 12px 14px; font-family: var(--mono); font-size: 14px; }
+.cities { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.city {
+  text-align: left; background: #1d6b3f; border: 2px solid #e6eef3; border-radius: 8px; padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 2px; box-shadow: 0 0 0 3px #1d6b3f; transition: transform .15s;
+}
+.city:hover { transform: translateY(-2px); }
+.city .from { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1.05; text-transform: uppercase; }
+.city .to { font-weight: 600; }
+.city .meta { font-size: 14px; opacity: .9; font-variant-numeric: tabular-nums; }
+.toggle { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 15px; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--hazard); }
+.how { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 15px; color: var(--muted); }
+.how div { border-left: 3px solid var(--line); padding-left: 10px; }
+.how b { color: var(--frost); }
+
+/* ---------- HUD ---------- */
+.hud { display: flex; flex-direction: column; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.hud-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.hud-top .when { font-family: var(--display); font-weight: 800; font-size: 26px; text-transform: uppercase; }
+.hud-top .where { color: var(--muted); font-size: 15px; }
+.meters { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.meter { display: flex; flex-direction: column; gap: 4px; }
+.meter label { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); display: flex; justify-content: space-between; }
+.meter label b { color: var(--frost); font-variant-numeric: tabular-nums; }
+.bar { height: 8px; border-radius: 4px; background: #0b121a; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 50%; transition: width .4s; }
+.m-health i { background: var(--blood); } .m-food i { background: #e3b45a; } .m-water i { background: var(--ice); } .m-zombie i { background: var(--hazard); }
+.route { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.route span { height: 22px; border-radius: 3px; background: #0b121a; font-family: var(--mono); font-size: 11px; display: grid; place-items: center; color: var(--muted); }
+.route span.done { background: #24435a; color: var(--frost); }
+.route span.now { background: var(--hazard); color: #1a0e02; font-weight: 600; }
+@media (max-width: 760px) { .meters { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 460px) { .meters { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- scenario ---------- */
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.tag { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--hazard); }
+.tag.cb { color: var(--ice); } .tag.det { color: var(--blood); }
+.card h2 { font-size: clamp(30px, 6vw, 44px); font-weight: 800; text-transform: uppercase; line-height: 1; }
+.card p.text { margin: 0; font-size: 18px; max-width: 65ch; }
+.timer { height: 6px; border-radius: 3px; background: #0b121a; overflow: hidden; }
+.timer i { display: block; height: 100%; background: var(--hazard); width: 100%; }
+.opts { display: flex; flex-direction: column; gap: 8px; }
+.opt { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: center; text-align: left; padding: 12px 14px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; }
+.opt:hover { border-color: var(--hazard); }
+.opt .k { width: 34px; height: 34px; border-radius: 6px; display: grid; place-items: center; background: #0b121a; font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--hazard); }
+.opt.picked { border-color: var(--hazard); background: #2a2216; }
+.opt:disabled { cursor: default; opacity: .55; } .opt.picked:disabled { opacity: 1; }
+.msgs { display: flex; flex-direction: column; gap: 6px; }
+.msg { padding: 8px 12px; border-radius: 6px; border-left: 4px solid var(--line); background: var(--panel-2); }
+.msg.bad { border-color: var(--blood); } .msg.good { border-color: var(--safe); } .msg.info { border-color: var(--ice); }
+.dev { font-family: var(--mono); font-size: 13px; color: var(--muted); background: #0b121a; border: 1px dashed var(--line); border-radius: 6px; padding: 8px 10px; white-space: pre-wrap; }
+.btn { align-self: flex-start; background: var(--hazard); color: #1a0e02; border: 0; border-radius: 6px; padding: 10px 18px; font-family: var(--display); font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; }
+.btn.ghost { background: transparent; color: var(--frost); border: 1px solid var(--line); }
+.hint { font-size: 13px; color: var(--muted); font-family: var(--mono); }
+table.ledger { border-collapse: collapse; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 15px; }
+table.ledger th, table.ledger td { padding: 4px 14px 4px 0; text-align: right; }
+table.ledger th:first-child, table.ledger td:first-child { text-align: left; }
+table.ledger th { color: var(--muted); font-weight: 400; }
+.pos { color: var(--safe); } .neg { color: var(--blood); }
+
+/* ---------- mini game ---------- */
+.mg-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pill { font-family: var(--mono); font-size: 12px; padding: 3px 8px; border-radius: 99px; border: 1px solid currentColor; }
+.pill.HARD { color: var(--blood); } .pill.NORMAL { color: var(--hazard); } .pill.EASY { color: var(--safe); }
+.stage { position: relative; background: #070c12; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.stage canvas { display: block; width: 100%; height: auto; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.controls input { background: #0b121a; color: var(--frost); border: 1px solid var(--line); border-radius: 6px; padding: 9px 12px; font-family: var(--mono); font-size: 17px; text-transform: uppercase; width: 220px; }
+.pad { display: grid; grid-template-columns: repeat(3, 48px); gap: 4px; }
+.pad button { height: 44px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; font-size: 18px; }
+.pad .sp { visibility: hidden; }
+.end h2 { font-size: clamp(44px, 10vw, 76px); }
+.end.won h2 { color: var(--safe); } .end.lost h2 { color: var(--blood); }
+@media (prefers-reduced-motion: reduce) { .bar i, .city { transition: none; } }
+
+.m-fuel i { background: #c58cf0; } .m-dist i { background: var(--safe); }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 370px; gap: 16px; align-items: start; }
+@media (max-width: 960px) { .layout { grid-template-columns: 1fr; } }
+.side { display: flex; flex-direction: column; gap: 16px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.panel h3 { font-size: 20px; font-weight: 800; text-transform: uppercase; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.panel h3 small { font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .06em; }
+.kv { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; font-size: 14px; font-variant-numeric: tabular-nums; }
+.kv span:nth-child(odd) { color: var(--muted); } .kv span:nth-child(even) { text-align: right; font-family: var(--mono); }
+.src { font-size: 12px; color: var(--muted); font-family: var(--mono); line-height: 1.4; }
+.src b { color: var(--frost); font-weight: 600; }
+.real { color: var(--safe); } .fict { color: var(--hazard); } .calc { color: var(--ice); }
+.riskrow { display: flex; gap: 10px; flex-wrap: wrap; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.riskrow b { color: var(--frost); font-weight: 600; }
+.chartbox { position: relative; }
+.chartbox canvas { width: 100%; height: auto; display: block; background: #0b121a; border-radius: 6px; }
+.tip { position: absolute; pointer-events: none; background: #0b121a; border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font-family: var(--mono); font-size: 12px; white-space: nowrap; display: none; z-index: 2; }
+select { background: #0b121a; color: var(--frost); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: inherit; font-size: 14px; }
+.calc-table { border-collapse: collapse; font-family: var(--mono); font-size: 13px; width: 100%; }
+.calc-table td { padding: 4px 6px; border-top: 1px solid var(--line); vertical-align: top; }
+.calc-table td:first-child { color: var(--muted); width: 120px; }
+details.calc summary { cursor: pointer; font-family: var(--mono); font-size: 13px; color: var(--ice); }
+table.mc { border-collapse: collapse; font-family: var(--mono); font-size: 13px; width: 100%; font-variant-numeric: tabular-nums; }
+table.mc th, table.mc td { padding: 5px 8px; text-align: right; border-top: 1px solid var(--line); }
+table.mc th:first-child, table.mc td:first-child { text-align: left; }
+table.mc th { color: var(--muted); font-weight: 400; }
+table.mc tr.you td { color: var(--hazard); }
+.ending-tag { font-family: var(--mono); font-size: 13px; padding: 2px 8px; border-radius: 99px; border: 1px solid currentColor; }
+.seedrow { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 15px; }
+.seedrow input { background: #0b121a; color: var(--frost); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; width: 140px; font-family: var(--mono); }
+.bigstats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.bigstats div { background: var(--panel-2); border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; }
+.bigstats b { font-family: var(--display); font-size: 28px; font-weight: 800; }
+.bigstats span { font-size: 12px; color: var(--muted); font-family: var(--mono); text-transform: uppercase; }
+/* ---------- v2: dashboard, pause, dev mode, mini game instructions, legends ---------- */
+.btn.small { font-size: 15px; padding: 6px 12px; }
+.hud-top #unitbtn { margin-left: auto; }
+.settings { display: flex; flex-direction: column; gap: 10px; }
+.devrow { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; color: var(--muted); font-size: 15px; }
+.devrow input { background: #0b121a; color: var(--frost); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; width: 170px; font-family: var(--mono); }
+.tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+@media (max-width: 760px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
+.tile { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; }
+.tile span { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.tile b { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.tile i { font-style: normal; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.tile i.pos { color: var(--safe); } .tile i.neg { color: var(--blood); }
+.dash-sec { border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+.outcome-head { display: flex; gap: 10px; align-items: center; font-size: 18px; }
+.rating { font-family: var(--mono); font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 99px; border: 2px solid currentColor; }
+.r-BEST { color: var(--safe); } .r-OKAY { color: var(--ice); } .r-RISKY { color: #e3b45a; } .r-WORST { color: var(--blood); }
+p.why { margin: 0; padding: 8px 12px; border-radius: 6px; background: #0b121a; border-left: 4px solid var(--ice); }
+p.why.neg { border-color: var(--blood); } p.why.pos { border-color: var(--safe); }
+.flagtag { font-family: var(--mono); font-size: 11px; color: var(--hazard); border: 1px solid currentColor; border-radius: 99px; padding: 1px 6px; margin-left: 6px; }
+.tag.ev { color: var(--safe); }
+.card { position: relative; }
+.card.paused .opts, .card.paused p.text, .card.paused h2 { filter: blur(9px); pointer-events: none; }
+.veil { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; background: rgba(14,23,33,.55); border-radius: 10px; pointer-events: none; }
+.veil b { font-family: var(--display); font-size: 56px; text-transform: uppercase; color: var(--hazard); }
+.veil span { font-family: var(--mono); color: var(--frost); }
+table.howto { border-collapse: collapse; width: 100%; font-size: 16px; }
+table.howto th { text-align: left; vertical-align: top; width: 110px; padding: 7px 10px 7px 0; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--hazard); border-top: 1px solid var(--line); }
+table.howto td { padding: 7px 0; border-top: 1px solid var(--line); }
+table.howto.compact { font-size: 13px; } table.howto.compact tr:not(:nth-child(2)) { display: none; }
+.rg-check { display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--mono); font-size: 13px; }
+.rg-check span { padding: 3px 8px; border-radius: 6px; background: #0b121a; color: var(--muted); }
+.rg-check span.done { color: var(--safe); } .rg-check span.now { color: var(--hazard); border: 1px solid var(--hazard); }
+.rg-feedback { font-size: 16px; min-height: 24px; }
+.rg-cards { display: flex; flex-direction: column; gap: 8px; }
+.rg-card { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: center; text-align: left; padding: 10px 12px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; }
+.rg-card:hover { border-color: var(--hazard); }
+.rg-card .k { width: 30px; height: 30px; border-radius: 6px; display: grid; place-items: center; background: #0b121a; font-family: var(--display); font-weight: 800; color: var(--hazard); }
+.rg-card.bad { border-color: var(--blood); opacity: .5; text-decoration: line-through; }
+.rg-slider { width: min(360px, 60vw); accent-color: var(--hazard); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--mono); font-size: 13px; color: var(--frost); padding: 4px 2px; }
+.lg { display: inline-flex; align-items: center; gap: 6px; }
+.chartbox.big canvas { min-height: 300px; }
+table.r0 td:nth-child(2), table.r0 td:nth-child(3) { text-align: right; }
+table.r0 td:last-child { text-align: left; font-size: 12px; }
+</style>
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+<main class="wrap" id="app">
+  <section id="title" style="display:flex;flex-direction:column;gap:16px">
+    <div class="brand">
+      <div class="eyebrow">Emergency alert &middot; Outbreak day 7 &middot; January</div>
+      <h1>Zombie<br><span>Escape</span></h1>
+      <p>Seven days to reach a safe zone before it seals at midnight on Day 7. Real roads, real county populations and real January weather; an invented zombie. Fourteen story stops, 20 seconds per choice, and your fuel, food, water and health to manage on the way.</p>
+    </div>
+    <div class="alert">All bridges and tunnels are closing. Choose your city and go.</div>
+    <div class="cities" id="cities"></div>
+    <div class="seedrow"><label for="seed">Seed</label><input id="seed" inputmode="numeric" placeholder="random"><span>Same seed + same choices = same game.</span></div>
+    <div class="settings">
+      <label class="toggle" for="metric"><input type="checkbox" id="metric"> Metric units (°C, km, liters)</label>
+      <div class="devrow"><label for="devpw">Developer mode</label><input id="devpw" type="password" placeholder="password" autocomplete="off"><button class="btn ghost small" id="devgo" type="button">Unlock</button><span id="devstate" class="hint">Off. Unlocking turns off the timer and shows ratings, every calculation, the SEIR model and code notes.</span></div>
+    </div>
+    <div class="how">
+      <div><b>Injury</b> and <b>infection</b> are separate risks. Injury depends on the choice, the weather and the time of day. Infection depends on how many infected are around you and how exposed you are.</div>
+      <div><b>Travel</b> uses real road distances. Driving burns fuel (25 mpg). No fuel or no vehicle means trouble on the road.</div>
+      <div><b>Every 2 picks</b>, a roll: risky play brings hard mini games; careful play brings easy ones with rewards.</div>
+      <div><b>Keys:</b> the option letter (A&ndash;G, R) or 1&ndash;7 to choose, Enter once to continue, P to pause the timer (then a 30-second cooldown).</div>
+    </div>
+    <p class="src"><span class="real">Real data</span>: U.S. Census Bureau Vintage 2023 county population estimates and TIGERweb land area; NOAA 1991&ndash;2020 January climate normals; OSRM road distances on OpenStreetMap data. <span class="fict">Fictional</span>: the zombie, its spread rates, and every risk coefficient. Survival percentages are game probabilities, not real-world odds.</p>
+  </section>
+
+  <section id="game" class="hidden" style="display:flex;flex-direction:column;gap:16px">
+    <div class="hud" id="hud">
+      <div class="hud-top"><div class="when" id="when">Day 1 08:00</div><div class="where" id="where"></div><button class="btn ghost small" id="unitbtn" type="button" title="Switch units">°F · mi · gal</button></div>
+      <div class="meters">
+        <div class="meter m-health"><label>Health <b id="v-health">100</b></label><div class="bar"><i id="b-health"></i></div></div>
+        <div class="meter m-food"><label>Food <b id="v-food">60</b></label><div class="bar"><i id="b-food"></i></div></div>
+        <div class="meter m-water"><label>Water <b id="v-water">60</b></label><div class="bar"><i id="b-water"></i></div></div>
+        <div class="meter m-fuel"><label>Fuel <b id="v-fuel">25</b></label><div class="bar"><i id="b-fuel"></i></div></div>
+        <div class="meter m-dist"><label><span id="l-dist">Miles left</span> <b id="v-dist">0</b></label><div class="bar"><i id="b-dist"></i></div></div>
+        <div class="meter m-zombie"><label><span id="l-zombie">Danger here</span> <b id="v-zombie">Low</b></label><div class="bar"><i id="b-zombie"></i></div></div>
+      </div>
+      <div class="riskrow" id="riskrow"></div>
+    </div>
+    <div class="layout">
+      <div id="screen"></div>
+      <aside class="side">
+        <div class="panel"><h3>Route <small id="route-sub"></small></h3><div class="chartbox"><canvas id="map" width="680" height="360"></canvas><div class="tip" id="map-tip"></div></div></div>
+        <div class="panel hidden" id="outbreak"></div>
+        <div class="panel hidden" id="devnotes"></div>
+      </aside>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="sim.js"></script>
+<script src="realgames.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

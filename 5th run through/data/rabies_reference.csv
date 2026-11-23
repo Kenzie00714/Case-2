@@ -1,0 +1,8 @@
+parameter,value,doses,source,url,note,entered
+incubation_typical,1 to 3 months,,"CDC MMWR 2010;59(RR-2), Rupprecht et al.",https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5902a1.htm,Usual time from exposure to symptoms,2026-11-19
+incubation_range,days to years,,CDC MMWR 2010;59(RR-2),https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5902a1.htm,Rare cases fall far outside the usual range,2026-11-19
+pep_unvaccinated_vaccine_days,"0, 3, 7, 14",4,CDC MMWR 2010;59(RR-2) (ACIP 4-dose schedule),https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5902a1.htm,Day 0 = as soon as possible after exposure; plus rabies immune globulin once at the start,2026-11-19
+pep_immune_globulin,"once, day 0",1,CDC MMWR 2008;57(RR-3),https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5703a1.htm,Only for people not previously vaccinated,2026-11-19
+pep_previously_vaccinated_vaccine_days,"0, 3",2,CDC MMWR 2008;57(RR-3),https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5703a1.htm,No immune globulin needed,2026-11-19
+pep_effectiveness,"highly effective when wound care, immune globulin and vaccine are prompt",,CDC MMWR 2010;59(RR-2),https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5902a1.htm,CDC gives no single percentage; treat any cure-chance number in the game as a fictional choice,2026-11-19
+after_symptoms,nearly always fatal,,U.S. Army DCPH-A rabies fact sheet,https://ph.health.mil/cdt/cphe-cdt-rabies-human-ref.pdf,Real-world basis for 'treatment must happen before symptoms',2026-11-19
