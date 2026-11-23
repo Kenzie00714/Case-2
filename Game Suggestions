@@ -1,1 +1,6 @@
-
+Mini game changes?? Not sure what happened there but the interactive minigames were way better and broke up the MCQ scenarios
+When a player selects an answer choice, the explanation is repeated only 1 explanation needs to show
+Do not show the good, okay, risky, or bad after the answer selection
+Add in a 5-day option on the main menu - create scenarios and mini games using the same logic and probability but make sure that the infection rate grows a little faster in the 5-day scenario 
+Have the game store past attempts so players can compare how well they did compared to others who had the same start city as them.
+Add pause button on in game play. Player can pause for as long as they want but the scenario or mini-game is hidden. While pasued player can see their current dashboard and route. The pause must have a cool-down period of 60 seconds.
