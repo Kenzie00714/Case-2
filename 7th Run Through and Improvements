@@ -3,3 +3,4 @@ https://claude.ai/artifact/C8PgdVvShiCYeKfxDkfT68
 Improvements for next run
 Random rolls for mini game difficulty need to be updated. The easy levels are a little too easy in my opinion. maybe like a roll 91-100 is easy (that way there are fewer "easy" levels being played. then 50-91 are normal difficulty and 1-49 are hard.
 It should be possible for a plyaer to go further than the next checkpoint. For instance if they choose to drive through the night without stopping and it is possible with the amount of fuel they have then they could pottentially skip the next check point and get to the safe zone sooner
+Instead of the map showing the entire US and it's check points while reading/answering scenarios it shows the currnt spot they are in, and it says current location city, state. Then it shows the next target check point on the map so it is zoomed in more and it says target location: city, state
