@@ -13,3 +13,6 @@ is it possible to change the past attempts to a bubble titled "Legends of the Ro
 make the title Zombie Escape Get to the safe zone. a lot smaller maybe like a 20 font bold Rubik Wet Paint font style
 the dange in x county % doesn't seem to really make sense. lets change the danger description to something like "Danger: High. About 1 in 5 people here are infected, and it’s spreading fast (+38% tomorrow)." for each county. So it should have danger and the bare below it then the description I just provided. Make sure the danger bar aligns with the other dashboard elements
 Risky choice odds: Lower the chance that a risky choice pays off from about 70% to about 60%, and raise its reward from +40 to +50 points, so taking a risk feels like a real gamble with a bigger payoff. Re-check survival rates afterward so the game doesn’t get too hard.
+The number of syphons left should be a hidden data point. player should not see this on their end
+if a player scores points it should show on the dashboard update above the health, food, eater, fuel etc.
+the radio tuning mini game should be timed instead of counting turns
