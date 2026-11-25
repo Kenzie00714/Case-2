@@ -29,3 +29,5 @@ Animated background: Add fog that drifts slowly across the screen and zombie sil
 The walking can look smoother. The full build can use more detailed shapes and a smoother walk cycle, so the figures look less like stick figures.
 remove fatugue and car car from in game play
 after each choice, add a one-word verdict to the result screen, like Best choice, Good choice, Risky (it paid off) or Risky (it didn’t), plus the short reason that’s already written for that choice. Players learn as they go without ever seeing the answers ahead of time.
+Reduce the amount of text players have to read for each encounter by focusing on the information necessary to make a decision. 
+Reduce the number of screens and clicks required to progress through the game by combining smaller events or automatically advancing after minor encounters.
