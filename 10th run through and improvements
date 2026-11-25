@@ -7,3 +7,9 @@ a pharmacy or clinic
 a stranger willing to trade for medicine
 a first-aid kit to search for
 Show it on the dashboard. The warning chip shows what’s needed and how long is left, for example: “Scratched: find medicine within 2 turns.”
+Problem: At a fork, the choices name real roads (for example, I-80 or US-30), but most players don’t know where those roads go, so they’re choosing blind.
+Fix for the next build:
+Draw each road on the map. While the fork is on screen, the route map zooms to the stretch ahead and draws each choice as its own colored line, labeled with the same letter as the button (A, B, C, D).
+Highlight on hover or tap. Hovering over or tapping a choice brightens that road and fades the others.
+Show the key facts on the line. Each road gets a small label with its extra hours and danger level, for example “B · +2 h · safer.”
+On phones, a small map appears above the choices during a fork so the player can still see the roads without scrolling.
