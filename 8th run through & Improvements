@@ -2,11 +2,11 @@ https://claude.ai/artifact/AtEeQop1JsM1ueYK83jfGr
 
 Improvements for next run
 I played the 5 day option but I went to day 6 with continued play. 5 days should be 5-days max and there should only be 2 scenarios a day for both game play modes
-player mode should not show what number roll they got to determine the difficulty of the mini game
-there should be a brief explanation to tell the player why they were injured
-there needs to be some incentive to complete the extra task
-if the player was injured by an infected, there should be some opportunity to treat the would within the next 3 turns
-if the player has maxed out the amount of times they can syphon gas, that option should not even show up for them anymore not even greyed out. maybe another scenario for when the player runs out of fuel and has maxed out the number of times they can syphone gas
+Player mode should not show what number roll they got to determine the difficulty of the mini game
+There should be a brief explanation to tell the player why they were injured
+There needs to be some incentive to complete the extra task
+If the player was injured by an infected, there should be some opportunity to treat the wound within the next 3 turns
+If the player has maxed out the amount of times they can syphon gas, that option should not even show up for them anymore not even greyed out. maybe another scenario for when the player runs out of fuel and has maxed out the number of times they can syphone gas
 Make choices feel less hidden. Many effects only show up later, so players can’t tell why they died. A short dashboard flash after each choice would help, like “−10 water, +1 h, injury dodged.”
 Callback scenes could say which earlier choice triggered them (“Because you helped the couple on Day 2…”).
 Make passengers worth having. Right now they mostly cost food and water. Each one could also bring a perk while they ride, such as a mechanic who repairs the car, a nurse who heals, or a lookout who lowers the danger. Then picking someone up is a real trade-off instead of a pure act of kindness. But they may also add nothing it can be a random roll
@@ -19,3 +19,5 @@ Side missions could get the four-choice treatment, for example “Take it on,”
 Add a short how-to-play card the first time someone plays.
 Add sound cues for low supplies, like a heartbeat when health is under 25%.
 Add a “what if” replay at the end. On the end screen, show the player’s two or three biggest turning points and what the odds would have been if they’d picked differently. It uses the same random seed, so it’s a fair comparison. It teaches cause and effect, and it gets people to play again.
+Dodge the wrecks minigame needs to be smaller. I have to scroll down mid-game to actually see the whole page.
+Minigames need to be relevant to the player's surrounding choices. I had to do the black-ice and radio scramble minigames while I was at the safe zone trying to get in.
