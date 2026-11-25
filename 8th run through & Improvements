@@ -26,3 +26,18 @@ menu seems to be a little busy so if we can condense some things like a small se
 at no point should the player have to scroll down in the game to see what they are doing in the mini game
 take out the clock when showing player status update after selecting a choice
 add back the brief descriptions of why health, food, water, or fuel went up or down.
+During the game: make points visible all the time
+A score counter on the dashboard. Points count up live, with a little pop and sound for big moments, like “+60 Helped the farmer” or “+100 Made the deadline with 6 hours to spare.”
+Streak bonuses. Three smart choices in a row earns ×1.5 on the next bonus, and a bad choice breaks the streak. That gives people a reason to think instead of tapping fast.
+Risk pays more. Risky choices that work out pay extra, and Hard mode multiplies the final score by 1.5. Bold players can climb the board even if they barely survive.
+Speed bonus. Answering in under 10 seconds of the 20-second timer adds a few points. In a live classroom that creates pressure and noise.
+Mini game points. A perfect lock pick or siphon earns points, so the arcade parts count toward the leaderboard too.
+Score breakdown animation. Each part counts up one at a time, something like “Survived +1,000 · Health +180 · Kindness +240 · Speed +90 · Streaks +150 = 1,660.” That’s the dopamine hit.
+A title based on how you played, such as “The Good Samaritan” (most helping), “Speed Demon” (most time to spare), “Barely Breathing” (survived under 10% health), or “Lone Wolf” (never picked anyone up).
+Name entry for the top 10. If you place, you type a nickname of up to 12 characters. I’d suggest nicknames rather than real names, since the board is on a shared screen and the link can be shared further. A simple filter can block inappropriate words.
+Rank reveal: “You placed #3 of 27 players today.”
+The presenter scoreboard in the developer mode ONLY
+A separate “scoreboard” screen you open on the projector. It refreshes every few seconds as people finish, and new entries slide in with a sound.
+Class session code. You start a session (for example “ACC380”) and players enter it, so the board shows only your class from that day, not every past run.
+Tabs: top scores, plus fun categories like “Most people helped,” “Shortest survival,” and “How people died” (a live bar chart of cold vs. fuel vs. infection, which is another nice analytics moment).
+A final “winner” screen with confetti to close the presentation.
