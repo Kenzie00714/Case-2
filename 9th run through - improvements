@@ -18,3 +18,4 @@ if a player scores points it should show on the dashboard update above the healt
 the radio tuning mini game should be timed instead of counting turns
 Road forks: Only show a fork when the next stretch has real risk, such as a High or Severe outbreak, snow or ice, mountains, or a very long drive. When the road ahead is low-risk, skip the fork and drive on automatically.
 Food and water rescue: Add emergency scenes for running out of food or water, like the existing fuel scenes, so players always get a chance to restock instead of losing health for several turns. Also add small automatic food and water finds in towns, shrinking as the outbreak grows.
+Ending badges: Rename the 10 ending badges to: Lone Survivor, Brought Them Home, Special Delivery, Last-Minute Cure, Silver Tongue, Roadkill, One of Them, Locked Out, End of the Road, and Denied Entry.
