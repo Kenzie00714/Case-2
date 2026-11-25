@@ -21,3 +21,8 @@ Add sound cues for low supplies, like a heartbeat when health is under 25%.
 Add a “what if” replay at the end. On the end screen, show the player’s two or three biggest turning points and what the odds would have been if they’d picked differently. It uses the same random seed, so it’s a fair comparison. It teaches cause and effect, and it gets people to play again.
 Dodge the wrecks minigame needs to be smaller. I have to scroll down mid-game to actually see the whole page.
 Minigames need to be relevant to the player's surrounding choices. I had to do the black-ice and radio scramble minigames while I was at the safe zone trying to get in.
+add in the group option on the menu with a sliding bar. default number of players is 1 but a player can go up to 5
+menu seems to be a little busy so if we can condense some things like a small settings gear at the top right which houses the developer mode (still requiring the password that has been used in other game runs), music, and sound effect controls
+at no point should the player have to scroll down in the game to see what they are doing in the mini game
+take out the clock when showing player status update after selecting a choice
+add back the brief descriptions of why health, food, water, or fuel went up or down.
