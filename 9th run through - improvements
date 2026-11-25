@@ -26,3 +26,4 @@ Time-based scenes: Let the clock decide each day’s main scene. Players who rea
 Add randomness with a roll: Write a second scene for each stop and pick one at random, so two players on the same route don’t see the same trip.
 The player should not have to scroll down at any point in the main menu or game to see options or mini game. everything needs to fit on the screen
 Animated background: Add fog that drifts slowly across the screen and zombie silhouettes that walk in place on the horizon. They move as if walking but never come closer or leave the screen. During play, add a red glow at the screen edges that grows and pulses faster as the county’s danger rises. option in settings to turn motion off for players who prefer less animation.
+The walking can look smoother. The full build can use more detailed shapes and a smoother walk cycle, so the figures look less like stick figures.
