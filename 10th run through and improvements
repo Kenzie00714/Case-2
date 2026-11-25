@@ -1,0 +1,9 @@
+https://claude.ai/artifact/B29x1qfVHRMt2VfdxQnzy9
+
+Improvements for next run
+Only offer what the player has. If they don’t have the item, that option is hidden or greyed out, with a short reason (for example, “You don’t have medicine”).
+Always give a way to get the item in time. If a problem has a deadline (treat the scratch within 3 turns, find water before you run dry), the next stop must offer at least one way to get the fix before time runs out. Examples:
+a pharmacy or clinic
+a stranger willing to trade for medicine
+a first-aid kit to search for
+Show it on the dashboard. The warning chip shows what’s needed and how long is left, for example: “Scratched: find medicine within 2 turns.”
