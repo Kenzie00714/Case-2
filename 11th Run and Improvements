@@ -4,3 +4,4 @@ Improvements for next run:
 "Sign in to see this artifact's data" should not be on the website.
 "Siphon the fuel" minigame isn't the most accurate. I release in the green but still lose.
 Hard "Hold the signal" is like impossible, especially with changing from A to D sometimes causing the slider to just stop instead of switch directions.
+Presentation mode should only be available when developer mode is on and the dev can select what screen to jump to
