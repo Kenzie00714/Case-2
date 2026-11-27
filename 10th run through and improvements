@@ -13,3 +13,5 @@ Draw each road on the map. While the fork is on screen, the route map zooms to t
 Highlight on hover or tap. Hovering over or tapping a choice brightens that road and fades the others.
 Show the key facts on the line. Each road gets a small label with its extra hours and danger level, for example “B · +2 h · safer.”
 On phones, a small map appears above the choices during a fork so the player can still see the roads without scrolling.
+at one point it told me I made a good choice but I lost points and I don't know why
+maybe in the developer mode there should be an option for us to look up a players run and see exactly the route, choices made, why the gained/lost points, etc. like we can just get a detailed breakdown of the players run. so maybe there is a run # somewhere on their screen each different computer/phone/run would have their own unique number (but don't make it super long)
