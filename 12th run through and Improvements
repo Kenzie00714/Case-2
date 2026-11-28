@@ -28,3 +28,5 @@ On the route bubble we already have the miles to next target and we can keep tha
 tucked into the top far right corner we can still keep the main menu, pause, and settings buttons.
 
 We should ALWAYS have the SEIR model hidden to players, only dev should see that when looking at the players run or backend data
+
+In the Dev demo run, we sould have a drop down menu where we can choose the screen we would like to go to so we can show the class different things. We would be able to pull up any mini game, all endings, and all big moments like a scratch or crash. 
