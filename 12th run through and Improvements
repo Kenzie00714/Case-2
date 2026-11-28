@@ -30,3 +30,7 @@ tucked into the top far right corner we can still keep the main menu, pause, and
 We should ALWAYS have the SEIR model hidden to players, only dev should see that when looking at the players run or backend data
 
 In the Dev demo run, we sould have a drop down menu where we can choose the screen we would like to go to so we can show the class different things. We would be able to pull up any mini game, all endings, and all big moments like a scratch or crash. 
+- The results screen could be a little more concise. Some updates, like driving, finding fuel, and resting, are displayed separately and could potentially be combined to reduce scrolling and keep the game moving.
+- Make sure the story outcomes stay consistent with the player’s decisions. For example, in the NYC route, I chose to walk across the George Washington Bridge, but the following updates mentioned driving and using fuel. The transition wasn’t entirely clear.
+- During playthroughs, double-check that resource changes (fuel, food, water, health) accurately reflect the player’s actions and that the underlying calculations are working as intended.
+- Continue testing different routes and difficulty settings to make sure the gameplay feels balanced and consistent across scenarios.
