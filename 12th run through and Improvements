@@ -11,3 +11,15 @@ Second, there should be predictability every day. Maybe 3 choices and 1 game eve
 
 Sometimes the stated change doesn’t match the actual change in stats 
 Twice I got hurt for slamming on the brakes and hitting my head on the steering wheel, we need reasons for injury that do not repeat
+
+In game update:
+Move the dashboard at the top of the screen to run diagonally on the left of the screen. Fit everything into 1 page so the player does not need to scroll down
+Dash should have (in this order)
+Points
+Hours until gates are sealed
+day # time
+miles left
+health + bar
+Food + bar
+water + bar
+Fuel + bar
