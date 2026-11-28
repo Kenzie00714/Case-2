@@ -26,3 +26,5 @@ when the player first starts it gives updates from the news and those need to be
 the side quest should remain visible to the player throughout their run but can be put in a bubble to the far right in between the weather bubble and route bubble.
 On the route bubble we already have the miles to next target and we can keep that, but we also need to total miles left in journey
 tucked into the top far right corner we can still keep the main menu, pause, and settings buttons.
+
+We should ALWAYS have the SEIR model hidden to players, only dev should see that when looking at the players run or backend data
