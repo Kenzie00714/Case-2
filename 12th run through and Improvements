@@ -8,3 +8,19 @@ Sometimes the stated change doesn’t match the actual change in stats
 Backstory/Pretext to add for infection: The outbreak began in rural Nebraska, where an unfamiliar fungus spread through corn used as cattle feed. The organism survived digestion and established itself in the animals’ nervous and glandular tissues. Infected cattle showed no obvious symptoms, allowing them to pass inspection before their meat entered the national food supply.
 Humans and household pets were initially exposed by eating contaminated beef or handling it during preparation. Many animals became asymptomatic carriers, harboring the infection in their saliva without developing the neurological illness seen in humans. Once the organism adapted to its new hosts, bites and other contact with infected saliva became the primary means of transmission.
 For several days, infected people appeared healthy while the fungus spread along their peripheral nerves and into the brain. The first symptoms—fever, confusion, agitation, and loss of impulse control—were easily mistaken for an acute illness or drug-induced psychosis. The final stage brought catastrophic neurological damage: victims became violently aggressive, largely unresponsive to pain, and driven to attack anyone nearby.
+
+In game update:
+Move the dashboard at the top of the screen to run diagonally on the left of the screen. Fit everything into 1 page so the player does not need to scroll down
+Dash should have (in this order)
+Points
+Hours until gates are sealed
+day # time
+health + bar
+Food + bar
+water + bar
+Fuel + bar
+
+Since the player dashboard is moving diagonally to the left of the screen everything else needs to shift to the right and up.
+when the player first starts it gives updates from the news and those need to be at the top of the screen and add a visual effect that says breaking in big bold red letters so the player knows to pay attention to it.
+the side quest should remain visible to the player throughout their run but can be put in a bubble to the far right in between the weather bubble and route bubble.
+On the route bubble we already have the miles to next target and we can keep that, but we also need to total miles left in journey
