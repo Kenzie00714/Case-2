@@ -19,8 +19,10 @@ health + bar
 Food + bar
 water + bar
 Fuel + bar
+Run #
 
 Since the player dashboard is moving diagonally to the left of the screen everything else needs to shift to the right and up.
 when the player first starts it gives updates from the news and those need to be at the top of the screen and add a visual effect that says breaking in big bold red letters so the player knows to pay attention to it.
 the side quest should remain visible to the player throughout their run but can be put in a bubble to the far right in between the weather bubble and route bubble.
 On the route bubble we already have the miles to next target and we can keep that, but we also need to total miles left in journey
+tucked into the top far right corner we can still keep the main menu, pause, and settings buttons.
