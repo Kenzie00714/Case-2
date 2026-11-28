@@ -9,7 +9,13 @@ Backstory/Pretext to add for infection: The outbreak began in rural Nebraska, wh
 Humans and household pets were initially exposed by eating contaminated beef or handling it during preparation. Many animals became asymptomatic carriers, harboring the infection in their saliva without developing the neurological illness seen in humans. Once the organism adapted to its new hosts, bites and other contact with infected saliva became the primary means of transmission.
 For several days, infected people appeared healthy while the fungus spread along their peripheral nerves and into the brain. The first symptoms—fever, confusion, agitation, and loss of impulse control—were easily mistaken for an acute illness or drug-induced psychosis. The final stage brought catastrophic neurological damage: victims became violently aggressive, largely unresponsive to pain, and driven to attack anyone nearby.
 
-In game update:
+With the updates game would be:
+- main menu, player can select # of days to play and route and they must click start game to go to next page
+- once the player starts game, the "how to play" will pop up with a short tutorial explains what is where and a couple practice problems that explain which kinds of answers tend to lower or raise certain stats (health, food, water, fuel). This would be a great opportunity to discuss why the danger level matters and how a rising danger level ought to impact our decision-making. Also maybe how the temperature ought to impact our decision-making. Like maybe 3 scenarios max and make sure that these are new scenarios that are not in any games but give the player an idea of what they are about to encounter. There should also be an option to opt out of the tutorial. Playing or skipping the turtorial WILL NOT impact the players game at all
+- One the play either finishes or skips the tutorial the screen will slowly fade to black and then the fog comes in and the backstory starts to come across the page. There are multiple sections to the backstory, after each section, the player needs to click next or something to go to the next part of the story so they have time to read everything. 
+- once the player has finished the story, the screen suddenly turns black and the game dashboard fades in with all of the current background graphics from version 12 of the game but with the new dashboard.
+
+In game dash update:
 Move the dashboard at the top of the screen to run diagonally on the left of the screen. Fit everything into 1 page so the player does not need to scroll down
 Dash should have (in this order)
 Points
